@@ -9,6 +9,7 @@ const textosPorIdioma = {
     "menu.filmes": "Filmes",
     "menu.contato": "Contato",
     "submenu.apresentacao": "Apresentação",
+    "submenu.trabalhos": "Trabalhos",
     "submenu.exposicoes": "Exposições",
     "submenu.midia": "Mídia",
     "submenu.publicacoes": "Publicações",
@@ -44,6 +45,7 @@ const textosPorIdioma = {
     "menu.filmes": "Films",
     "menu.contato": "Contact",
     "submenu.apresentacao": "Presentation",
+    "submenu.trabalhos": "Works",
     "submenu.exposicoes": "Exhibitions",
     "submenu.midia": "Media",
     "submenu.publicacoes": "Publications",
@@ -221,7 +223,7 @@ function definirPagina(paginaDestino) {
   });
   document.querySelectorAll("[data-pagina-destino]").forEach((link) => {
     const linkAcademico = link.dataset.paginaDestino === "academic" && paginasAcademicas.includes(paginaSegura);
-    const linkArte = link.dataset.paginaDestino === "art" && paginasArte.includes(paginaSegura);
+    const linkArte = link.dataset.paginaDestino === "artGroup" && paginasArte.includes(paginaSegura);
     link.classList.toggle("ativo", link.dataset.paginaDestino === paginaSegura || linkAcademico || linkArte);
   });
   window.scrollTo({ top: 0, behavior: "auto" });
