@@ -1,0 +1,807 @@
+:root {
+  --cor-fundo: #fff;
+  --cor-texto-principal: #111;
+  --cor-texto-suave: #77736b;
+  --cor-linha-fina: rgba(17, 17, 17, 0.14);
+  --cor-painel: rgba(17, 17, 17, 0.035);
+  --largura-menu-lateral: 240px;
+  --recuo-hero-topo: 132px;
+  --recuo-hero-direita: 56px;
+  --recuo-hero-baixo: 104px;
+  font-family: Avenir, "Avenir Next", Inter,h Arial, sans-serif;
+  color: var(--cor-texto-principal);
+  background: var(--cor-fundo);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--cor-fundo);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+.titulo-destaque {
+  font-family: Avenir, "Avenir Next", Inter, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+.rotulo-secao {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.texto-suave {
+  color: var(--cor-texto-suave);
+}
+
+.link-sublinhado {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+.menu-lateral {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 40;
+  width: var(--largura-menu-lateral);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--cor-fundo);
+}
+
+.marca-menu-lateral {
+  display: block;
+  margin-top: 18px;
+}
+
+.marca-menu-lateral .rotulo-secao {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.nome-marca-menu {
+  display: block;
+  font-family: Avenir, "Avenir Next", Inter, Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.55em;
+  white-space: nowrap;
+}
+
+.navegacao-menu-lateral {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.navegacao-menu-lateral a,
+.grupo-navegacao > a,
+.item-menu-lateral {
+  width: fit-content;
+  font-size: 0.8rem;
+  letter-spacing: -0.02em;
+  transition: opacity 180ms ease;
+}
+
+.item-menu-lateral {
+  cursor: default;
+}
+
+.navegacao-menu-lateral a:hover,
+.navegacao-menu-lateral a.ativo {
+  opacity: 0.52;
+}
+
+.grupo-navegacao {
+  display: grid;
+  gap: 0;
+}
+
+.subnavegacao {
+  max-height: 0;
+  overflow: hidden;
+  display: grid;
+  gap: 7px;
+  padding-left: 14px;
+  transition: max-height 220ms ease, padding-top 220ms ease;
+}
+
+.grupo-navegacao:hover .subnavegacao,
+.grupo-navegacao:focus-within .subnavegacao {
+  max-height: 96px;
+  padding-top: 10px;
+}
+
+.subnavegacao a {
+  color: var(--cor-texto-suave);
+  font-size: 0.68rem;
+}
+
+.rodape-menu-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rodape-menu-lateral p {
+  margin: 0;
+  color: var(--cor-texto-suave);
+  font-size: 0.7rem;
+  line-height: 1.55;
+}
+
+.seletor-idioma {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.seletor-idioma span {
+  color: var(--cor-texto-suave);
+  opacity: 0.3;
+}
+
+.botao-idioma {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.botao-idioma:not(.ativo) {
+  opacity: 0.4;
+}
+
+.cabecalho-mobile {
+  display: none;
+}
+
+.fundo-menu-lateral {
+  display: none;
+}
+
+.conteudo-principal {
+  min-width: 0;
+  padding-left: var(--largura-menu-lateral);
+}
+
+.pagina {
+  display: none;
+}
+
+.pagina.ativo {
+  display: block;
+}
+
+.pagina-inicial {
+  position: relative;
+  height: 100svh;
+  overflow: hidden;
+  background: var(--cor-fundo);
+}
+
+.imagem-hero {
+  position: absolute;
+  top: var(--recuo-hero-topo);
+  bottom: var(--recuo-hero-baixo);
+  left: 47%;
+  width: min(70vw, 1120px);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 1400ms ease;
+}
+
+.imagem-hero.ativo {
+  opacity: 1;
+}
+
+.imagem-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.rodape-hero {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.pontos-hero {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pontos-hero button {
+  width: 16px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  background: currentColor;
+  opacity: 0.4;
+  transition: width 250ms ease, opacity 250ms ease;
+}
+
+.pontos-hero button.ativo {
+  width: 40px;
+  opacity: 1;
+}
+
+.extra-inicial {
+  display: none;
+}
+
+body.rota-inicial .extra-inicial {
+  display: block;
+}
+
+.obras-destaque,
+.pagina-conteudo {
+  padding: 48px 48px 56px;
+}
+
+.barra-secao {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.barra-secao h2 {
+  margin: 0;
+  font-size: clamp(1rem, 1.55vw, 1.25rem);
+  line-height: 1.08;
+}
+
+.grade-obras-destaque {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 760px;
+  background: transparent;
+}
+
+.cartao-obra {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--cor-fundo);
+}
+
+.cartao-obra img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1200ms ease;
+}
+
+.cartao-obra:hover img {
+  transform: scale(1.04);
+}
+
+.legenda-cartao-obra {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0);
+  opacity: 0;
+  transition: background 500ms ease, opacity 500ms ease;
+}
+
+.cartao-obra:hover .legenda-cartao-obra {
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+}
+
+.titulo-cartao-obra {
+  font-family: Avenir, "Avenir Next", Inter, Arial, sans-serif;
+  font-size: 0.76rem;
+  letter-spacing: 0;
+}
+
+.pagina-conteudo {
+  max-width: 1296px;
+}
+
+.conteudo-alinhado-menu {
+  padding-top: 78px;
+}
+
+#about .cabecalho-pagina,
+#presentation .cabecalho-pagina,
+#art .cabecalho-pagina,
+#exhibitions > .cabecalho-pagina,
+#media > .cabecalho-pagina {
+  display: none;
+}
+
+.cabecalho-pagina {
+  margin-bottom: 44px;
+}
+
+.cabecalho-pagina.cabecalho-compacto {
+  margin-bottom: 36px;
+}
+
+.cabecalho-pagina .rotulo-secao {
+  margin-bottom: 18px;
+}
+
+.cabecalho-pagina [data-texto="secao.sobre.numero"] {
+  font-size: 0.82rem;
+}
+
+.cabecalho-pagina h1 {
+  max-width: 640px;
+  margin: 0;
+  font-size: clamp(1.25rem, 2.1vw, 1.75rem);
+  line-height: 1.12;
+}
+
+.texto-introducao {
+  max-width: 520px;
+  margin: 16px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.layout-sobre {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+.texto-corpo {
+  grid-column: span 8;
+  display: grid;
+  gap: 16px;
+}
+
+.texto-corpo p {
+  margin: 0;
+  font-size: clamp(0.76rem, 0.82vw, 0.82rem);
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.contatos-sobre {
+  display: grid;
+  grid-column: 9 / span 3;
+  align-content: start;
+  gap: 16px;
+  font-size: 0.72rem;
+}
+
+.contatos-sobre .rotulo-secao {
+  margin-bottom: 4px;
+}
+
+.secao-listagem {
+  margin-bottom: 36px;
+}
+
+.titulo-pagina-listagem {
+  margin: 0 0 16px;
+  font-size: clamp(0.92rem, 1.25vw, 1.1rem);
+  line-height: 1.12;
+}
+
+.secao-listagem > h2,
+.cabecalho-listagem h2 {
+  margin: 0;
+  font-size: clamp(0.92rem, 1.25vw, 1.1rem);
+  line-height: 1.12;
+}
+
+.cabecalho-listagem {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.lista-itens {
+  border-top: 1px solid var(--cor-linha-fina);
+  border-bottom: 1px solid var(--cor-linha-fina);
+}
+
+.item-lista {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 10px 0;
+  border-top: 1px solid var(--cor-linha-fina);
+}
+
+.item-lista:first-child {
+  border-top: 0;
+}
+
+.ano-item-lista {
+  width: 80px;
+  flex: 0 0 80px;
+  color: var(--cor-texto-suave);
+}
+
+.titulo-item-lista {
+  font-size: clamp(0.74rem, 0.8vw, 0.82rem);
+  line-height: 1.35;
+}
+
+.detalhe-item-lista {
+  margin-top: 4px;
+  color: var(--cor-texto-suave);
+}
+
+.grade-catalogo-obras {
+  display: grid;
+  gap: 24px;
+  max-width: 960px;
+  background: transparent;
+}
+
+.linha-comparacao-obras {
+  display: grid;
+  gap: 18px;
+}
+
+.linha-cinco-obras {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.linha-quatro-obras {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grade-filmes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 56px;
+  max-width: 1300px;
+}
+
+.poster-filme {
+  aspect-ratio: 3 / 4;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: var(--cor-painel);
+}
+
+.poster-filme img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1200ms ease;
+}
+
+.cartao-filme:hover img {
+  transform: scale(1.04);
+}
+
+.pagina-contato {
+  min-height: auto;
+  flex-direction: column;
+}
+
+.pagina-contato.ativo {
+  display: flex;
+}
+
+.pagina-contato .cabecalho-pagina {
+  margin-bottom: 14px;
+}
+
+.pagina-contato .cabecalho-pagina .rotulo-secao {
+  margin-bottom: 14px;
+}
+
+.pagina-contato .cabecalho-pagina h1 {
+  font-size: clamp(0.96rem, 1.2vw, 1.1rem);
+}
+
+.pagina-contato .texto-introducao {
+  margin-top: 10px;
+}
+
+.grade-contato {
+  max-width: none;
+  display: grid;
+  border-top: 1px solid var(--cor-linha-fina);
+  border-bottom: 1px solid var(--cor-linha-fina);
+}
+
+.grade-contato a {
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: 20px;
+  padding: 10px 0;
+  border-top: 1px solid var(--cor-linha-fina);
+}
+
+.grade-contato a:first-child {
+  border-top: 0;
+}
+
+.grade-contato span {
+  display: block;
+}
+
+.valor-contato {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+}
+
+.grade-contato strong {
+  display: inline;
+  color: var(--cor-texto-principal);
+  font-size: clamp(0.82rem, 0.9vw, 0.92rem);
+  font-weight: 300;
+  line-height: 1.35;
+  overflow-wrap: normal;
+  word-break: normal;
+  transition: opacity 200ms ease;
+}
+
+.grade-contato small {
+  display: inline;
+  margin-left: 0;
+  color: var(--cor-texto-principal);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+.grade-contato a:hover strong {
+  opacity: 0.6;
+}
+
+.contato-atelier {
+  margin-top: 40px;
+  padding-top: 0;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 1024px) {
+  .menu-lateral {
+    z-index: 80;
+    width: min(82vw, 320px);
+    transform: translateX(-100%);
+    transition: transform 260ms ease;
+    box-shadow: 24px 0 64px rgba(17, 17, 17, 0.08);
+  }
+
+  body.menu-lateral-aberto .menu-lateral {
+    transform: translateX(0);
+  }
+
+  .fundo-menu-lateral {
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    display: block;
+    border: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.72);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 260ms ease;
+  }
+
+  body.menu-lateral-aberto .fundo-menu-lateral {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .cabecalho-mobile {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 50;
+    height: 56px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-linha-fina);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+  }
+
+  .botao-menu-mobile {
+    width: 34px;
+    height: 34px;
+    border: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    gap: 6px;
+    background: transparent;
+    color: var(--cor-texto-principal);
+    cursor: pointer;
+  }
+
+  .botao-menu-mobile span {
+    width: 18px;
+    height: 1px;
+    display: block;
+    background: currentColor;
+    transition: transform 200ms ease;
+  }
+
+  body.menu-lateral-aberto .botao-menu-mobile span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  body.menu-lateral-aberto .botao-menu-mobile span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  .marca-mobile {
+    font-family: Avenir, "Avenir Next", Inter, Arial, sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.55em;
+    white-space: nowrap;
+  }
+
+  .conteudo-principal {
+    padding-left: 0;
+    padding-top: 56px;
+  }
+
+  .pagina-conteudo,
+  .obras-destaque {
+    padding: 36px 24px 48px;
+  }
+
+  .pagina-inicial {
+    height: calc(100svh - 56px);
+  }
+
+  .imagem-hero {
+    inset: 0;
+    width: auto;
+    transform: none;
+  }
+
+  .grade-obras-destaque {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .linha-cinco-obras,
+  .linha-quatro-obras {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .layout-sobre {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-contato strong {
+    overflow-wrap: anywhere;
+  }
+
+  .pagina-contato .cabecalho-pagina {
+    margin-bottom: 32px;
+  }
+
+  .texto-corpo,
+  .contatos-sobre {
+    grid-column: auto;
+  }
+
+  .grade-filmes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .rodape-hero {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+  }
+
+  .barra-secao {
+    display: block;
+  }
+
+  .barra-secao a {
+    display: inline-block;
+    margin-top: 24px;
+  }
+
+  .cabecalho-pagina {
+    margin-bottom: 36px;
+  }
+
+  .cabecalho-pagina h1 {
+    font-size: 1.25rem;
+  }
+
+  .pagina-contato .cabecalho-pagina h1 {
+    font-size: 1.15rem;
+  }
+
+  .grade-obras-destaque,
+  .grade-catalogo-obras {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .linha-cinco-obras,
+  .linha-quatro-obras {
+    grid-template-columns: 1fr;
+  }
+
+  .item-lista {
+    align-items: start;
+    gap: 16px;
+  }
+
+  .grade-contato a {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .grade-contato small {
+    display: inline;
+    margin-left: 0;
+    margin-top: 0;
+    white-space: normal;
+  }
+
+  .ano-item-lista {
+    width: 56px;
+    flex-basis: 56px;
+  }
+}
