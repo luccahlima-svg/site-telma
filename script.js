@@ -6,14 +6,15 @@ const textosPorIdioma = {
     "menu.sobre": "Sobre",
     "menu.arte": "Arte",
     "menu.academico": "Acadêmico",
-    "menu.filmes": "Filmes",
+    "menu.filmes": "Filme",
     "menu.contato": "Contato",
     "submenu.apresentacao": "Apresentação",
     "submenu.trabalhos": "Trabalhos",
     "submenu.exposicoes": "Exposições",
-    "submenu.midia": "Mídia",
-    "submenu.publicacoes": "Publicações",
+    "submenu.textos": "Textos",
+    "submenu.publicacoes": "Publicações selecionadas",
     "submenu.aulas": "Aulas",
+    "submenu.pesquisas": "Pesquisas",
     "inicio.legendaImagem": "Imagem de referência",
     "inicio.obrasDestaque": "Obras selecionadas",
     "inicio.verTodasObras": "Ver todas as obras →",
@@ -22,34 +23,49 @@ const textosPorIdioma = {
     "secao.sobre.texto1": "Telma Hoyler (São Paulo, 1988) é artista visual e cientista social, tendo concluído em 2022 seu doutorado em ciência política pela Universidade de São Paulo. Transita entre a cidade e a floresta, entre a política e a poética, entre o mundo “de dentro” e o “de fora”. Ao invés de dualidades e oposições, procura cerzir os pontos de contato entre essas categorias, desgastadas pela forma binária como insistimos em categorizar o mundo.",
     "secao.sobre.texto2": "Desde 2018, busca traduzir para o universo visual reflexões e sensações despertadas ao longo da sua extensa pesquisa etnográfica junto a burocratas, políticos e lideranças comunitárias. Cria a partir de múltiplas linguagens, incluindo escrita, costura, colagem, desenho e procedimentos de apropriação de imagens e sons para produção de vídeos e instalações sonoras.",
     "secao.sobre.exposicoes": "Exposições",
-    "secao.sobre.midia": "Mídia",
+    "secao.textos": "Textos",
     "secao.arte.numero": "Arte",
     "secao.arte.titulo": "Catálogo.",
     "secao.arte.introducao": "Catálogo visual em atualização — imagens provisórias até a substituição pelas obras finais.",
-    "academico.publicacoes": "Publicações",
+    "academico.publicacoes": "Publicações selecionadas",
     "academico.aulas": "Aulas",
+    "academico.pesquisas": "Pesquisas",
     "secao.contato.numero": "Contato",
     "secao.contato.titulo": "Vamos conversar",
     "secao.contato.introducao": "Para obras, exposições, encomendas, residências, parcerias acadêmicas e imprensa.",
     "contato.email": "Email",
+    "contato.instagram.arte": "Instagram — Arte",
+    "contato.instagram.academico": "Instagram — Acadêmico",
+    "contato.linkedin": "LinkedIn",
     "contato.lattes.titulo": "Currículo Lattes",
     "contato.lattes.descricao": "Plataforma de currículos acadêmicos do CNPq.",
     "contato.atelier": "Atelier",
-    "contato.cidade": "São Paulo, Brasil"
+    "contato.cidade": "São Paulo, Brasil",
+    "filme.ficha.titulo": "Ficha Técnica",
+    "filme.ficha.direcao": "Direção:",
+    "filme.ficha.montagem": "Montagem:",
+    "filme.ficha.fotografia": "Direção de Fotografia:",
+    "filme.ficha.cameras": "Câmeras:",
+    "filme.ficha.som": "Edição de Som e Mixagem:",
+    "filme.ficha.cor": "Colorização:",
+    "filme.ficha.producao": "Produção:",
+    "filme.ficha.posProducao": "Pós-Produção:",
+    "filme.ficha.financiamento": "Financiamento:"
   },
   en: {
     "rodape.direitos": "© 2026 Telma Hoyler.<br />All rights reserved.",
     "menu.sobre": "About",
     "menu.arte": "Visual art",
     "menu.academico": "Academic",
-    "menu.filmes": "Films",
+    "menu.filmes": "Film",
     "menu.contato": "Contact",
     "submenu.apresentacao": "Presentation",
     "submenu.trabalhos": "Works",
     "submenu.exposicoes": "Exhibitions",
-    "submenu.midia": "Media",
-    "submenu.publicacoes": "Publications",
+    "submenu.textos": "Texts",
+    "submenu.publicacoes": "Selected publications",
     "submenu.aulas": "Classes",
+    "submenu.pesquisas": "Research",
     "inicio.legendaImagem": "Reference image",
     "inicio.obrasDestaque": "Selected works",
     "inicio.verTodasObras": "View all works →",
@@ -58,37 +74,125 @@ const textosPorIdioma = {
     "secao.sobre.texto1": "Telma Hoyler (São Paulo, 1988) is a visual artist and academic researcher. Holds a PhD in political science at the University of São Paulo (2017-2022) with exchange periods in Sciences Po (Paris, 2019-2020) and the University College London (Londres, 2023).",
     "secao.sobre.texto2": "She researches human interactions considering their multiple possibilities: in time, in space, between humans and non-humans. In the field of political sociology, she studies the topic by focusing on representation and democracy. Since 2017, the artist seeks to translate into the visual universe reflections and sensations aroused throughout her extensive ethnographic research with bureaucrats, politicians and territorial mobilizers.",
     "secao.sobre.exposicoes": "Exhibitions",
-    "secao.sobre.midia": "Media",
+    "secao.textos": "Texts",
     "secao.arte.numero": "Visual art",
     "secao.arte.titulo": "Catalogue.",
     "secao.arte.introducao": "Visual catalogue in progress — temporary images until the final works are added.",
-    "academico.publicacoes": "Publications",
+    "academico.publicacoes": "Selected publications",
     "academico.aulas": "Classes",
+    "academico.pesquisas": "Research",
     "secao.contato.numero": "Contact",
     "secao.contato.titulo": "Let's talk.",
     "secao.contato.introducao": "For works, exhibitions, commissions, residencies, academic partnerships and press.",
     "contato.email": "Email",
+    "contato.instagram.arte": "Instagram — Art",
+    "contato.instagram.academico": "Instagram — Academic",
+    "contato.linkedin": "LinkedIn",
     "contato.lattes.titulo": "Lattes CV",
     "contato.lattes.descricao": "CNPq academic CV platform.",
     "contato.atelier": "Studio",
-    "contato.cidade": "São Paulo, Brazil"
+    "contato.cidade": "São Paulo, Brazil",
+    "filme.ficha.titulo": "Credits",
+    "filme.ficha.direcao": "Director:",
+    "filme.ficha.montagem": "Editing:",
+    "filme.ficha.fotografia": "Director of Photography:",
+    "filme.ficha.cameras": "Camera:",
+    "filme.ficha.som": "Sound Editing and Mixing:",
+    "filme.ficha.cor": "Color Grading:",
+    "filme.ficha.producao": "Production:",
+    "filme.ficha.posProducao": "Post-Production:",
+    "filme.ficha.financiamento": "Funding:"
   }
 };
 
-const obras = [
-  { imagem: "work-01-DuHw-eJp.jpg", ano: "2023", pt: "Rede vermelha", en: "Red net" },
-  { imagem: "work-02-C0LLo0Nh.jpg", ano: "2022", pt: "Renda azul", en: "Blue lace" },
-  { imagem: "work-03-CKEm1NS-.jpg", ano: "2021", pt: "Barcos", en: "Boats" },
-  { imagem: "work-04-CBFwcts7.jpg", ano: "2020", pt: "Escrita azul", en: "Blue writing" },
-  { imagem: "work-05-B2Ep6u1v.jpg", ano: "2022", pt: "Cidade amarela", en: "Yellow city" },
-  { imagem: "work-06-u_eBZYgy.jpg", ano: "2019", pt: "Tubos", en: "Tubes" },
-  { imagem: "work-07-DZwS_mQM.jpg", ano: "2018", pt: "Fios", en: "Threads" },
-  { imagem: "work-08--x5uXQpe.jpg", ano: "2017", pt: "Repetição", en: "Repetition" },
-  { imagem: "work-09-hb7boNr0.jpg", ano: "2016", pt: "Esfera de papel", en: "Paper sphere" },
-  { imagem: "work-10-CJYxq5eT.jpg", ano: "2015", pt: "Estufa", en: "Greenhouse" },
-  { imagem: "work-11-D1TvYo0W.jpg", ano: "2014", pt: "Linha vertical", en: "Vertical line" },
-  { imagem: "work-12-BYFJgm7u.jpg", ano: "2013", pt: "Atelier", en: "Studio" }
+const titulosObras = [
+  ["Fale com minhas mãos, 2023", "Speak with My Hands, 2023"],
+  ["Acordar, escrever de lado, 2024", "Waking Up, Writing Sideways, 2024"],
+  ["A Ground of Promises, 2024", "A Ground of Promises, 2024"],
+  ["Welcome Sounds, 2023", "Welcome Sounds, 2023"],
+  ["Trolley, 2023", "Trolley, 2023"],
+  ["Representação, 2023", "Representation, 2023"],
+  ["Palimpsesto, 2023", "Palimpsest, 2023"],
+  ["Ponto de vista, 2025", "Point of View, 2025"],
+  ["Ponte para meu corpo, 2021", "Bridge to My Body, 2021"],
+  ["Sem título (ainda), 2025", "Untitled (Still), 2025"],
+  ["Trip, 2024", "Trip, 2024"],
+  ["Das formas de mover o tempo, 2022", "Ways of Moving Time, 2022"],
+  ["Bússola, 2022", "Compass, 2022"],
+  ["Barquinho de papel", "Paper Boat"],
+  ["Punctum, 2026", "Punctum, 2026"],
+  ["Clockwise, 2024", "Clockwise, 2024"],
+  ["Travessia, 2021", "Crossing, 2021"],
+  ["Movimento incontido, número 1", "Uncontained Movement, Number 1"],
+  ["Sem título, 2024 (série)", "Untitled, 2024 (series)"],
+  ["Metamorfose, 2022", "Metamorphosis, 2022"],
+  ["Terço, 2021–atual", "Rosary, 2021–present"],
+  ["Pulmão, 2022", "Lung, 2022"],
+  ["Orbitais, 2021", "Orbitals, 2021"],
+  ["Solipsismos, 2022", "Solipsisms, 2022"],
+  ["Metropolis, 2019", "Metropolis, 2019"],
+  ["Inventário, 2018", "Inventory, 2018"],
+  ["Cartas inviáveis, 2020", "Unfeasible Letters, 2020"],
+  ["??", "??"],
+  ["Série Desvio, 2020", "Deviation Series, 2020"],
+  ["Irene, 2019", "Irene, 2019"],
+  ["Escrita-rio, 2022–atual", "River-Writing, 2022–present"],
+  ["Rever I, 2022", "Rever I, 2022"],
+  ["Pedra lascada, pedra polida, 2022", "Chipped Stone, Polished Stone, 2022"],
+  ["Passagens do interior, 2021", "Inner Passages, 2021"],
+  ["Sismógrafo", "Seismograph"],
+  ["Azul", "Blue"],
+  ["Garrafas ao mar, 2021–atual", "Messages in Bottles, 2021–present"],
+  ["Rede social", "Social Network"],
+  ["O rio e o tempo, 2020 (tríptico)", "The River and Time, 2020 (triptych)"],
+  ["Argonauta, 2020", "Argonaut, 2020"],
+  ["Infiltração, 2021", "Infiltration, 2021"],
+  ["Grounding, 2024", "Grounding, 2024"],
+  ["Caminhada", "Walk"],
+  ["Garatujas", "Scribbles"],
+  ["Sagradas escrituras, 2021", "Sacred Scriptures, 2021"]
 ];
+
+// Ordem visual aprovada. Cada número aponta para a antiga posição da imagem.
+const ordemOriginalDasCapas = [
+  1, 2, 3, 4, 5,
+  6, 7, 8, 9, 10,
+  11, 12, 13, 14, 15,
+  16, 18, 26, 19, 17,
+  21, 22, 20, 24, 25,
+  30, 27, 28, 29, 31,
+  32, 38, 33, 34, 35,
+  36, 37, 39, 40, 41,
+  42, 43, 44, 45, 23
+];
+
+const capasOriginais = {
+  3: "trabalhos/santinhos _chao de estrelas.png",
+  5: "trabalhos/obra-05-capa.png",
+  6: "trabalhos/Representação detalhe1.png",
+  19: "trabalhos/obra-19-clara.png",
+  23: "trabalhos/sagradas-escrituras-capa-recorte.png",
+  26: "trabalhos/acervo-66.jpg",
+  30: "trabalhos/InventarioX.jpg",
+  34: "trabalhos/obra_34.jpeg",
+  36: "trabalhos/obra-36-capa-recorte.png",
+  37: "trabalhos/capa-garrafa.jpg",
+  38: "trabalhos/obra_38.jpeg",
+  39: "trabalhos/rede social capa.png",
+  40: "trabalhos/rio-e-tempo-capa-recorte.png",
+  41: "trabalhos/pensamento-de-caracol-capa-transparente.png",
+  42: "trabalhos/portfolio-tete-2.jpg",
+  43: "trabalhos/fio terra2.png",
+  44: "trabalhos/imagem 1.png"
+};
+
+const obras = Array.from({ length: 45 }, (_, indice) => ({
+  imagem: capasOriginais[ordemOriginalDasCapas[indice]]
+    || `trabalhos/obra-${String(ordemOriginalDasCapas[indice]).padStart(2, "0")}.webp`,
+  ano: "",
+  pt: titulosObras[indice][0],
+  en: titulosObras[indice][1]
+}));
 
 const exposicoes = [
   { ano: "2025", pt: "Para entender a fúria", en: "Para entender a fúria", detalhePt: "Espaço Tingê, curadoria de Thatiana Cardoso — São Paulo", detalheEn: "Espaço Tingê, curated by Thatiana Cardoso — São Paulo" },
@@ -105,11 +209,9 @@ const exposicoes = [
   { ano: "2017", pt: "Marias", en: "Marias", detalhePt: "Galeria Butantã — São Paulo", detalheEn: "Galeria Butantã — São Paulo" }
 ];
 
-const midia = [
-  { ano: "2023", pt: "A conversation about political art", en: "A conversation about political art", detalhePt: "EOPP/ERC — Londres", detalheEn: "EOPP/ERC — London" },
-  { ano: "2023", pt: "Mobilização política em territórios de São Paulo", en: "Political Mobilization in São Paulo: ethnographic notes", detalhePt: "Jornal da USP — São Paulo", detalheEn: "Jornal da USP — São Paulo" },
-  { ano: "2023", pt: "Mobilização política e métodos qualitativos", en: "Political mobilization and qualitative methods", detalhePt: "Urbanidades, Cebrap — São Paulo", detalheEn: "Urbanidades, Cebrap — São Paulo" },
-  { ano: "2020", pt: "Sobre a artista", en: "About the artist", detalhePt: "Livraria Feminista Confraria Vermelha — Cidade do Porto", detalheEn: "Livraria Feminista Confraria Vermelha — Cidade do Porto" }
+const textos = [
+  { ano: "2024", pt: "The rule and the exception", en: "The rule and the exception", detalhePt: "Catálogo", detalheEn: "Catalogue", url: "assets/textos/the-rule-and-the-exception-catalogue.pdf" },
+  { ano: "2024", pt: "Marcas de ordens provisórias", en: "Marcas de ordens provisórias", detalhePt: "", detalheEn: "", url: "assets/textos/marcas-de-ordens-provisorias.pdf" }
 ];
 
 const publicacoes = [
@@ -126,37 +228,37 @@ const publicacoes = [
 ];
 
 const aulas = [
-  { ano: "2022", pt: "Laboratório Método sem Método", en: "Laboratório Método sem Método", detalhePt: "Bruno Novaes, Instituto Adelina — outubro-novembro", detalheEn: "Bruno Novaes, Instituto Adelina — October-November" },
-  { ano: "2022", pt: "Textos e Têxteis", en: "Textos e Têxteis", detalhePt: "Estefânia Lima e Salma Dória, Instituto Adelina — outubro-novembro", detalheEn: "Estefânia Lima and Salma Dória, Instituto Adelina — October-November" },
-  { ano: "2022", pt: "Acompanhamento artístico individual", en: "Individual artistic mentoring", detalhePt: "André Komatsu", detalheEn: "André Komatsu" },
-  { ano: "2022", pt: "Casero Residência", en: "Casero Residency", detalhePt: "Parque Itatiaia, Patricia Stagi — edição de inverno", detalheEn: "Parque Itatiaia, Patricia Stagi — winter edition" },
-  { ano: "2022", pt: "Acompanhamento artístico", en: "Artistic mentoring", detalhePt: "Julie Belfer", detalheEn: "Julie Belfer" },
-  { ano: "2021", pt: "A linha e seus papeis", en: "A linha e seus papeis", detalhePt: "Edith Derdyk, A Casa Tombada — março", detalheEn: "Edith Derdyk, A Casa Tombada — March" },
-  { ano: "2021", pt: "O que conta a história da arte?", en: "O que conta a história da arte?", detalhePt: "Maria Helena Bernardes, ESPAI — setembro", detalheEn: "Maria Helena Bernardes, ESPAI — September" },
-  { ano: "2019", pt: "Acompanhamento artístico", en: "Artistic mentoring", detalhePt: "Julia Demeter", detalheEn: "Julia Demeter" }
+  { ano: "2026", pt: "Cidade e clima", en: "City and climate", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
+  { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative methods and research techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
+  { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban dynamics and public policies", detalhePt: "", detalheEn: "" }
 ];
 
-const paginas = ["home", "about", "presentation", "exhibitions", "media", "art", "publications", "classes", "films", "contact"];
+const paginas = ["home", "about", "presentation", "exhibitions", "texts", "art", "publications", "classes", "research", "films", "contact"];
 const paginasPadrao = { academic: "publications" };
-const paginasAcademicas = ["publications", "classes"];
-const paginasArte = ["art", "exhibitions", "media"];
+const paginasAcademicas = ["publications", "classes", "research"];
+const paginasArte = ["art", "exhibitions", "texts"];
 const imagensHero = document.querySelectorAll(".imagem-hero");
 const botoesHero = document.querySelectorAll(".pontos-hero button");
 const botaoMenuMobile = document.querySelector(".botao-menu-mobile");
 const fundoMenuLateral = document.querySelector(".fundo-menu-lateral");
 let imagemHeroAtual = 0;
 
-function criarCartaoObra(obra) {
+function criarCartaoObra(obra, indice) {
   const titulo = obra[idiomaAtual];
-  return `
-    <a href="#art" class="cartao-obra">
-      <img src="assets/imagens/${obra.imagem}" alt="${titulo}" loading="lazy" />
+  const legenda = titulo || obra.ano
+    ? `
       <span class="legenda-cartao-obra">
         <span>
           <span class="titulo-cartao-obra">${titulo}</span>
           <span class="rotulo-secao texto-suave">${obra.ano}</span>
         </span>
       </span>
+    `
+    : "";
+  return `
+    <a href="obra.html?id=${indice + 1}&lang=${idiomaAtual}" class="cartao-obra cartao-obra-${indice + 1}" aria-label="Abrir obra ${indice + 1}">
+      <img src="assets/${obra.imagem}" alt="${titulo || `Obra ${String(indice + 1).padStart(2, "0")}`}" loading="lazy" />
+      ${legenda}
     </a>
   `;
 }
@@ -182,14 +284,11 @@ function renderizarConteudo() {
   }
   document.querySelector("#gradeCatalogoObras").innerHTML = `
     <div class="linha-comparacao-obras linha-cinco-obras">
-      ${obras.slice(0, 5).map(criarCartaoObra).join("")}
-    </div>
-    <div class="linha-comparacao-obras linha-quatro-obras">
-      ${obras.slice(5, 9).map(criarCartaoObra).join("")}
+      ${obras.map(criarCartaoObra).join("")}
     </div>
   `;
   document.querySelector("#listaExposicoes").innerHTML = exposicoes.map(criarItemLista).join("");
-  document.querySelector("#listaMidia").innerHTML = midia.map(criarItemLista).join("");
+  document.querySelector("#listaTextos").innerHTML = textos.map(criarItemLista).join("");
   document.querySelector("#listaPublicacoes").innerHTML = publicacoes.map(criarItemLista).join("");
   document.querySelector("#listaAulas").innerHTML = aulas.map(criarItemLista).join("");
 }

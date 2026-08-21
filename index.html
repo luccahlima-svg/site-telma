@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Inter+Tight:wght@200;300;400&titulo-destaque=swap"
     />
-    <link rel="stylesheet" href="styles.css?v=20260614-2" />
+    <link rel="stylesheet" href="styles.css?v=20260819-7" />
   </head>
   <body>
     <aside class="menu-lateral">
@@ -26,21 +26,22 @@
         <nav class="navegacao-menu-lateral" aria-label="Menu principal">
           <a href="#about" data-pagina-destino="about" data-texto="menu.sobre">Sobre</a>
           <div class="grupo-navegacao">
-            <a href="#exhibitions" data-pagina-destino="artGroup" data-texto="menu.arte">Arte</a>
+            <a href="#art" data-pagina-destino="artGroup" data-texto="menu.arte">Arte</a>
             <div class="subnavegacao">
-              <a href="#exhibitions" data-pagina-destino="exhibitions" data-texto="submenu.exposicoes">Exposições</a>
-              <a href="#media" data-pagina-destino="media" data-texto="submenu.midia">Mídia</a>
               <a href="#art" data-pagina-destino="art" data-texto="submenu.trabalhos">Trabalhos</a>
+              <a href="#exhibitions" data-pagina-destino="exhibitions" data-texto="submenu.exposicoes">Exposições</a>
+              <a href="#texts" data-pagina-destino="texts" data-texto="submenu.textos">Textos</a>
             </div>
           </div>
           <div class="grupo-navegacao">
             <a href="#publications" data-pagina-destino="academic" data-texto="menu.academico">Acadêmico</a>
             <div class="subnavegacao">
-              <a href="#publications" data-pagina-destino="publications" data-texto="submenu.publicacoes">Publicações</a>
+              <a href="#publications" data-pagina-destino="publications" data-texto="submenu.publicacoes">Publicações selecionadas</a>
               <a href="#classes" data-pagina-destino="classes" data-texto="submenu.aulas">Aulas</a>
+              <a href="#research" data-pagina-destino="research" data-texto="submenu.pesquisas">Pesquisas</a>
             </div>
           </div>
-          <a href="#films" data-pagina-destino="films" data-texto="menu.filmes">Filmes</a>
+          <a href="#films" data-pagina-destino="films" data-texto="menu.filmes">Filme</a>
           <a href="#contact" data-pagina-destino="contact" data-texto="menu.contato">Contato</a>
         </nav>
       </div>
@@ -125,22 +126,20 @@
         <section class="secao-listagem conteudo-alinhado-menu">
           <div class="cabecalho-listagem">
             <h2 class="titulo-destaque" data-texto="secao.sobre.exposicoes">Exposições</h2>
-            <span class="rotulo-secao texto-suave">12</span>
           </div>
           <div class="lista-itens" id="listaExposicoes"></div>
         </section>
       </section>
 
-      <section id="media" class="pagina pagina-conteudo" data-pagina="media">
+      <section id="texts" class="pagina pagina-conteudo" data-pagina="texts">
         <header class="cabecalho-pagina">
-          <div class="rotulo-secao texto-suave" data-texto="secao.sobre.midia">Mídia</div>
+          <div class="rotulo-secao texto-suave" data-texto="secao.textos">Textos</div>
         </header>
         <section class="secao-listagem conteudo-alinhado-menu">
           <div class="cabecalho-listagem">
-            <h2 class="titulo-destaque" data-texto="secao.sobre.midia">Mídia</h2>
-            <span class="rotulo-secao texto-suave">4</span>
+            <h2 class="titulo-destaque" data-texto="secao.textos">Textos</h2>
           </div>
-          <div class="lista-itens" id="listaMidia"></div>
+          <div class="lista-itens" id="listaTextos"></div>
         </section>
       </section>
 
@@ -155,7 +154,7 @@
 
       <section id="publications" class="pagina pagina-conteudo" data-pagina="publications" data-pagina-pai="academic">
         <section class="secao-listagem conteudo-alinhado-menu">
-          <h1 class="titulo-destaque titulo-pagina-listagem" data-texto="academico.publicacoes">Publicações</h1>
+          <h1 class="titulo-destaque titulo-pagina-listagem" data-texto="academico.publicacoes">Publicações selecionadas</h1>
           <div class="lista-itens" id="listaPublicacoes"></div>
         </section>
       </section>
@@ -167,13 +166,33 @@
         </section>
       </section>
 
+      <section id="research" class="pagina pagina-conteudo" data-pagina="research" data-pagina-pai="academic">
+        <section class="secao-listagem conteudo-alinhado-menu">
+          <h1 class="titulo-destaque titulo-pagina-listagem" data-texto="academico.pesquisas">Pesquisas</h1>
+        </section>
+      </section>
+
       <section id="films" class="pagina pagina-conteudo" data-pagina="films">
         <div class="grade-filmes conteudo-alinhado-menu">
-          <a class="cartao-filme" href="https://www.territoriodoc.com/" target="_blank" rel="noreferrer">
-            <div class="poster-filme">
+          <article class="cartao-filme">
+            <a class="poster-filme" href="https://www.territoriodoc.com/" target="_blank" rel="noreferrer">
               <img src="assets/imagens/film-territorio-DB_nv63p.jpg" alt="" />
-            </div>
-          </a>
+            </a>
+            <section class="ficha-tecnica-filme">
+              <h1 data-texto="filme.ficha.titulo">Ficha Técnica</h1>
+              <dl>
+                <div><dt data-texto="filme.ficha.direcao">Direção:</dt><dd>Telma Hoyler</dd></div>
+                <div><dt data-texto="filme.ficha.montagem">Montagem:</dt><dd>Luiz Romero</dd></div>
+                <div><dt data-texto="filme.ficha.fotografia">Direção de Fotografia:</dt><dd>Luiz Romero</dd></div>
+                <div><dt data-texto="filme.ficha.cameras">Câmeras:</dt><dd>Luiz Romero, Ricardo Moura, Daniel Ferreira</dd></div>
+                <div><dt data-texto="filme.ficha.som">Edição de Som e Mixagem:</dt><dd>Julia Telles</dd></div>
+                <div><dt data-texto="filme.ficha.cor">Colorização:</dt><dd>Bernardo Neder</dd></div>
+                <div><dt data-texto="filme.ficha.producao">Produção:</dt><dd>Planetária Produções e Pesquisa</dd></div>
+                <div><dt data-texto="filme.ficha.posProducao">Pós-Produção:</dt><dd>Cajamanga</dd></div>
+                <div><dt data-texto="filme.ficha.financiamento">Financiamento:</dt><dd>Urban Studies Foundation</dd></div>
+              </dl>
+            </section>
+          </article>
         </div>
       </section>
 
@@ -187,9 +206,17 @@
             <span class="rotulo-secao texto-suave" data-texto="contato.email">Email</span>
             <strong class="titulo-destaque">telmahoyler@gmail.com</strong>
           </a>
-          <a href="https://www.instagram.com/te_hoyler/" target="_blank" rel="noreferrer">
-            <span class="rotulo-secao texto-suave">Instagram</span>
-            <strong class="titulo-destaque">@te_hoyler</strong>
+          <a href="https://www.instagram.com/tete_hoyler/" target="_blank" rel="noreferrer">
+            <span class="rotulo-secao texto-suave" data-texto="contato.instagram.arte">Instagram — Arte</span>
+            <strong class="titulo-destaque">@tete_hoyler</strong>
+          </a>
+          <a href="https://www.instagram.com/telma_hoyler/" target="_blank" rel="noreferrer">
+            <span class="rotulo-secao texto-suave" data-texto="contato.instagram.academico">Instagram — Acadêmico</span>
+            <strong class="titulo-destaque">@telma_hoyler</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/telma-hoyler-6042aa2a5" target="_blank" rel="noreferrer">
+            <span class="rotulo-secao texto-suave" data-texto="contato.linkedin">LinkedIn</span>
+            <strong class="titulo-destaque">Telma Hoyler</strong>
           </a>
           <a href="http://lattes.cnpq.br/1322059531873511" target="_blank" rel="noreferrer">
             <span class="rotulo-secao texto-suave" data-texto="contato.lattes.titulo">Currículo Lattes</span>
@@ -203,6 +230,6 @@
       </section>
     </main>
 
-    <script src="script.js?v=20260614-2"></script>
+    <script src="script.js?v=20260819-4"></script>
   </body>
 </html>

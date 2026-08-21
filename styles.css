@@ -1,5 +1,5 @@
 :root {
-  --cor-fundo: #fff;
+  --cor-fundo: #f4f3ef;
   --cor-texto-principal: #111;
   --cor-texto-suave: #77736b;
   --cor-linha-fina: rgba(17, 17, 17, 0.14);
@@ -8,7 +8,7 @@
   --recuo-hero-topo: 132px;
   --recuo-hero-direita: 56px;
   --recuo-hero-baixo: 104px;
-  font-family: Avenir, "Avenir Next", Inter,h Arial, sans-serif;
+  font-family: Avenir, "Avenir Next", Inter, Arial, sans-serif;
   color: var(--cor-texto-principal);
   background: var(--cor-fundo);
 }
@@ -91,7 +91,7 @@ button {
 .nome-marca-menu {
   display: block;
   font-family: Avenir, "Avenir Next", Inter, Arial, sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.55em;
@@ -230,7 +230,7 @@ button {
 .imagem-hero img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -324,6 +324,160 @@ body.rota-inicial .extra-inicial {
   transform: scale(1.04);
 }
 
+.cartao-obra-2 img {
+  transform: scale(1.14);
+  transform-origin: center top;
+}
+
+.cartao-obra-2:hover img {
+  transform: scale(1.18);
+}
+
+.cartao-obra-9 img {
+  transform: scale(1.3);
+  transform-origin: center;
+}
+
+.cartao-obra-9:hover img {
+  transform: scale(1.34);
+}
+
+.cartao-obra-10 img {
+  object-position: center 39%;
+  transform: scale(1.3);
+}
+
+.cartao-obra-10:hover img {
+  transform: scale(1.34);
+}
+
+.cartao-obra-13 img {
+  transform: scale(1.3);
+}
+
+.cartao-obra-13:hover img {
+  transform: scale(1.34);
+}
+
+.cartao-obra-20 img {
+  object-position: 52% 50%;
+  transform: scale(3.7);
+}
+
+.cartao-obra-20:hover img {
+  transform: scale(3.78);
+}
+
+.cartao-obra-17 img {
+  object-fit: cover;
+  object-position: center 62%;
+}
+
+.cartao-obra-19 img {
+  transform: none;
+}
+
+.cartao-obra-19:hover img {
+  transform: scale(1.04);
+}
+
+/* Camufla o fundo branco destas capas no off-white da página. */
+.cartao-obra-31,
+.cartao-obra-39,
+.cartao-obra-45 {
+  background: var(--cor-fundo);
+}
+
+.cartao-obra-31 img,
+.cartao-obra-39 img,
+.cartao-obra-45 img {
+  mix-blend-mode: multiply;
+}
+
+.cartao-obra-25 img {
+  transform: scale(3);
+  transform-origin: 34% 58%;
+}
+
+.cartao-obra-25:hover img {
+  transform: scale(3.08);
+}
+
+.cartao-obra-18 img {
+  transform: scale(2.5);
+  transform-origin: 50% 38%;
+}
+
+.cartao-obra-18:hover img {
+  transform: scale(2.58);
+}
+
+.cartao-obra-27 img {
+  transform: scale(1.18);
+}
+
+.cartao-obra-27:hover img {
+  transform: scale(1.22);
+}
+
+.cartao-obra-29 img {
+  transform: scale(3.4);
+  transform-origin: 52% 50%;
+}
+
+.cartao-obra-29:hover img {
+  transform: scale(3.48);
+}
+
+.cartao-obra-26 img {
+  transform: scale(1.16);
+}
+
+.cartao-obra-26:hover img {
+  transform: scale(1.2);
+}
+
+.cartao-obra-30 img {
+  transform: scale(2.2);
+  transform-origin: 72% 38%;
+}
+
+.cartao-obra-30:hover img {
+  transform: scale(2.28);
+}
+
+.cartao-obra-34 img {
+  transform: scale(2.35);
+  transform-origin: 51% 49%;
+}
+
+.cartao-obra-34:hover img {
+  transform: scale(2.43);
+}
+
+.cartao-obra-32 img {
+  transform: scale(2.5);
+  transform-origin: 50% 59%;
+}
+
+.cartao-obra-32:hover img {
+  transform: scale(2.58);
+}
+
+.cartao-obra-40 img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.cartao-obra-44 img {
+  transform: scale(1.58);
+  transform-origin: center;
+}
+
+.cartao-obra-44:hover img {
+  transform: scale(1.64);
+}
+
 .legenda-cartao-obra {
   position: absolute;
   inset: 0;
@@ -348,17 +502,26 @@ body.rota-inicial .extra-inicial {
 
 .pagina-conteudo {
   max-width: 1296px;
+  margin-inline: auto;
+  transform: translateX(calc(var(--largura-menu-lateral) / -2));
+}
+
+#art.pagina-conteudo {
+  max-width: none;
 }
 
 .conteudo-alinhado-menu {
   padding-top: 78px;
+  width: 100%;
+  max-width: 960px;
+  margin-inline: auto;
 }
 
 #about .cabecalho-pagina,
 #presentation .cabecalho-pagina,
 #art .cabecalho-pagina,
 #exhibitions > .cabecalho-pagina,
-#media > .cabecalho-pagina {
+#texts > .cabecalho-pagina {
   display: none;
 }
 
@@ -429,7 +592,7 @@ body.rota-inicial .extra-inicial {
 }
 
 .titulo-pagina-listagem {
-  margin: 0 0 16px;
+  margin: 0 0 24px;
   font-size: clamp(0.92rem, 1.25vw, 1.1rem);
   line-height: 1.12;
 }
@@ -442,7 +605,7 @@ body.rota-inicial .extra-inicial {
 }
 
 .cabecalho-listagem {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -484,13 +647,15 @@ body.rota-inicial .extra-inicial {
 .grade-catalogo-obras {
   display: grid;
   gap: 24px;
+  width: 100%;
   max-width: 960px;
+  margin-inline: auto;
   background: transparent;
 }
 
 .linha-comparacao-obras {
   display: grid;
-  gap: 18px;
+  gap: 44px;
 }
 
 .linha-cinco-obras {
@@ -502,28 +667,76 @@ body.rota-inicial .extra-inicial {
 }
 
 .grade-filmes {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 960px;
+}
+
+.cartao-filme {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 56px;
-  max-width: 1300px;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: start;
+  gap: 48px;
+  width: min(100%, 800px);
 }
 
 .poster-filme {
-  aspect-ratio: 3 / 4;
-  margin-bottom: 20px;
+  display: block;
+  width: min(100%, 220px);
+  margin: 0;
   overflow: hidden;
   background: var(--cor-painel);
 }
 
 .poster-filme img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   transition: transform 1200ms ease;
 }
 
 .cartao-filme:hover img {
   transform: scale(1.04);
+}
+
+.ficha-tecnica-filme h1 {
+  margin: 0 0 16px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--cor-linha-fina);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ficha-tecnica-filme dl {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  color: var(--cor-texto-suave);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.ficha-tecnica-filme dl > div {
+  display: grid;
+  grid-template-columns: 176px minmax(0, 1fr);
+  gap: 22px;
+}
+
+.ficha-tecnica-filme dt,
+.ficha-tecnica-filme dd {
+  margin: 0;
+}
+
+.ficha-tecnica-filme dt {
+  color: inherit;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.ficha-tecnica-filme dd {
+  font-weight: 400;
 }
 
 .pagina-contato {
@@ -552,7 +765,9 @@ body.rota-inicial .extra-inicial {
 }
 
 .grade-contato {
-  max-width: none;
+  width: 100%;
+  max-width: 960px;
+  margin-inline: auto;
   display: grid;
   border-top: 1px solid var(--cor-linha-fina);
   border-bottom: 1px solid var(--cor-linha-fina);
@@ -612,6 +827,10 @@ body.rota-inicial .extra-inicial {
 }
 
 @media (max-width: 1024px) {
+  .pagina-conteudo {
+    transform: none;
+  }
+
   .menu-lateral {
     z-index: 80;
     width: min(82vw, 320px);
@@ -739,12 +958,24 @@ body.rota-inicial .extra-inicial {
     grid-column: auto;
   }
 
-  .grade-filmes {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 640px) {
+  .cartao-filme {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .ficha-tecnica-filme dl > div {
+    grid-template-columns: 1fr;
+    gap: 1px;
+    padding-bottom: 4px;
+  }
+
+  .ficha-tecnica-filme dt {
+    white-space: normal;
+  }
+
   .rodape-hero {
     left: 24px;
     right: 24px;
