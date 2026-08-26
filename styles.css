@@ -658,6 +658,37 @@ body.rota-inicial .extra-inicial {
   border-top: 0;
 }
 
+.item-pesquisa {
+  padding: 18px 0 22px;
+  border-top: 1px solid var(--cor-linha-fina);
+}
+
+.item-pesquisa:first-child {
+  border-top: 0;
+}
+
+.item-pesquisa h2 {
+  margin: 0 0 10px;
+  font-size: clamp(0.78rem, 0.88vw, 0.9rem);
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.texto-pesquisa {
+  max-width: 900px;
+}
+
+.texto-pesquisa p {
+  margin: 0;
+  font-size: clamp(0.74rem, 0.8vw, 0.82rem);
+  line-height: 1.58;
+  text-align: justify;
+}
+
+.texto-pesquisa p + p {
+  margin-top: 8px;
+}
+
 .ano-item-lista {
   width: 80px;
   flex: 0 0 80px;

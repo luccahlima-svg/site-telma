@@ -233,6 +233,48 @@ const aulas = [
   { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban dynamics and public policies", detalhePt: "", detalheEn: "" }
 ];
 
+const pesquisas = [
+  {
+    titulo: "Candidatura de servidores públicos",
+    paragrafos: [
+      "Classicamente, esperamos que funcionários públicos não se relacionem com a política partidária; estariam nas burocracias e departamentos dos vários níveis de governo justamente para garantir estabilidade entre eleições, para que políticas permaneçam mesmo que o governante e o partido no poder mudem. A pesquisa procura entender, a partir da análise da base de dados de candidaturas do TSE – Tribunal Superior Eleitoral no Brasil, o fenômeno da candidatura dessas pessoas. Em termos qualitativos, enfoca na categoria dos policiais militares e professores de escolas públicas para entender como transformam o capital funcional aprendido como funcionários públicos em capital político para disputar eleições.",
+      "Financiamento: Fapesp"
+    ]
+  },
+  {
+    titulo: "Intermediadores da política",
+    paragrafos: [
+      "Do ponto de vista relacional, sempre existe alguém entre dois mundos: que conecta famílias, amigos, empresas etc. Essa pesquisa olha especificamente para os intermediários da política que atuam no nível dos bairros, conectando cidadãos ainda pouco inseridos nas redes políticas a instâncias públicas da política mais institucionalizada, como mandatos parlamentares, burocracias etc.",
+      "Iniciou-se no final de 2016 como uma pesquisa etnográfica baseada na cidade de São Paulo para fins de doutoramento, tendo-se estendido por diversos caminhos subsequentes, incluindo a Rede People and Parliaments (2023-2025), a colaboração com o Nepol – Núcleo de Estudos em Poder Local (UFJF), entre outras parcerias e projetos em curso."
+    ]
+  },
+  {
+    titulo: "Pensar o pensamento: etnografia da política e outras reflexões epistêmicas e metodológicas",
+    paragrafos: [
+      "Toda pesquisa carrega uma pergunta escondida atrás da pergunta: não só o que descobrimos, mas como chegamos a poder dizer isso. Anos de campo ao lado de vereadores e seus intermediários me ensinaram que conhecer a política de perto muda o que se pode ver — e também o que se corre o risco de deixar de ver. Esta é a reflexão sobre o próprio ofício: os dilemas de estar perto demais e longe o suficiente, as traduções entre o que se observa e o que se escreve. Uma etnografia da própria etnografia, por assim dizer — pensar o pensamento como parte do trabalho, não como seu apêndice."
+    ]
+  },
+  {
+    titulo: "Cidade e clima",
+    paragrafos: [
+      "A cidade sempre foi pensada como espaço de conflito e negociação, mas pensar a cidade contemporânea exige acrescentar outra camada: a cidade como corpo que sente o clima, que alaga, esquenta, seca. Este interesse cruza a tradição dos estudos urbanos com os debates recentes sobre adaptação e resiliência, perguntando como o clima se torna também questão de poder local: quem decide por onde a água escoa, quem tem sombra e quem tem sol, quem tem para onde ir quando chove demais. Caminhar pela cidade — atenta a córregos cobertos, rachaduras, árvores que faltam — é também um método: registrar no corpo, e às vezes na câmera, o que os indicadores ainda não sabem nomear."
+    ]
+  },
+  {
+    titulo: "Artefatos da política",
+    paragrafos: [
+      "Documentos e objetos também fazem política, isto é, não apenas a representam, mas carregam decisões, omissões e rastros de poder que sobrevivem ao expediente que os produziu. Explorei anteriormente esse assunto nas publicações “A vida política dos documentos” (2019) e Itinerários da produção legislativa (2023). Daí duas coleções nascidas dessa mesma curiosidade: santinhos de campanha reunidos desde os anos 1950, quando se materializavam em caixas de fósforo; e boletim físico impresso pelas urnas eletrônicas. Ambas coleções já se tornaram matéria-prima de obras expostas.",
+      "Um projeto sonhado nessa linha de interesses é criar mobiliário urbano fabricado a partir do descarte de documentos públicos e posicionar esse mobiliário para que pessoas descansem em praças públicas pela cidade."
+    ]
+  },
+  {
+    titulo: "Ressentimentos e outras questões de família / Home in Politics",
+    paragrafos: [
+      "“Home is where we start from”, escreveu Winnicott — mas onde a casa vai depois? Esta pesquisa, em parceria comparativa entre Brasil e Reino Unido, parte da ideia de que a casa não fica confinada à esfera privada: ela viaja emocionalmente, simbólica e materialmente para dentro das instituições políticas, moldando como poder, cuidado e conflito são vividos e geridos ali dentro. Olhamos para parlamentos nacionais e câmaras municipais nos dois países perguntando como hierarquias familiares, divisões de trabalho por gênero, comensalidade e afeto doméstico são reencenados na vida institucional cotidiana. Entre os afetos que assim cruzam a fronteira do privado ao público está o ressentimento, sentimento tantas vezes lido apenas como combustível reacionário, mas que talvez carregue também uma dimensão mais geral que cruza espectros políticos referindo-se a quem sente que seu lugar na casa comum da sociedade não foi reconhecido. Interessa-nos, assim, entender como o ressentimento circula e se naturaliza nas instituições e constrói a política."
+    ]
+  }
+];
+
 const paginas = ["home", "about", "presentation", "exhibitions", "texts", "art", "publications", "classes", "research", "films", "contact"];
 const paginasPadrao = { academic: "publications" };
 const paginasAcademicas = ["publications", "classes", "research"];
@@ -277,6 +319,17 @@ function criarItemLista(item) {
   `;
 }
 
+function criarItemPesquisa(pesquisa) {
+  return `
+    <article class="item-pesquisa">
+      <h2>${pesquisa.titulo}</h2>
+      <div class="texto-pesquisa">
+        ${pesquisa.paragrafos.map((paragrafo) => `<p>${paragrafo}</p>`).join("")}
+      </div>
+    </article>
+  `;
+}
+
 function renderizarConteudo() {
   const gradeObrasDestaque = document.querySelector("#gradeObrasDestaque");
   if (gradeObrasDestaque) {
@@ -291,6 +344,7 @@ function renderizarConteudo() {
   document.querySelector("#listaTextos").innerHTML = textos.map(criarItemLista).join("");
   document.querySelector("#listaPublicacoes").innerHTML = publicacoes.map(criarItemLista).join("");
   document.querySelector("#listaAulas").innerHTML = aulas.map(criarItemLista).join("");
+  document.querySelector("#listaPesquisas").innerHTML = pesquisas.map(criarItemPesquisa).join("");
 }
 
 function traduzirTextos() {
