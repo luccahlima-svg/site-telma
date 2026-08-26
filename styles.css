@@ -344,11 +344,11 @@ body.rota-inicial .extra-inicial {
 
 .cartao-obra-10 img {
   object-position: center 39%;
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
 
 .cartao-obra-10:hover img {
-  transform: scale(1.34);
+  transform: scale(1.44);
 }
 
 .cartao-obra-13 img {
@@ -394,6 +394,30 @@ body.rota-inicial .extra-inicial {
   mix-blend-mode: multiply;
 }
 
+.cartao-obra-31 img {
+  transform: scale(1.18);
+}
+
+.cartao-obra-31:hover img {
+  transform: scale(1.22);
+}
+
+.cartao-obra-39 img {
+  transform: scale(1.08);
+}
+
+.cartao-obra-39:hover img {
+  transform: scale(1.12);
+}
+
+.cartao-obra-45 img {
+  transform: scale(1.18);
+}
+
+.cartao-obra-45:hover img {
+  transform: scale(1.22);
+}
+
 .cartao-obra-25 img {
   transform: scale(3);
   transform-origin: 34% 58%;
@@ -404,12 +428,11 @@ body.rota-inicial .extra-inicial {
 }
 
 .cartao-obra-18 img {
-  transform: scale(2.5);
-  transform-origin: 50% 38%;
+  transform: scale(1.32);
 }
 
 .cartao-obra-18:hover img {
-  transform: scale(2.58);
+  transform: scale(1.36);
 }
 
 .cartao-obra-27 img {
@@ -456,17 +479,24 @@ body.rota-inicial .extra-inicial {
 }
 
 .cartao-obra-32 img {
-  transform: scale(2.5);
-  transform-origin: 50% 59%;
+  transform: none;
 }
 
 .cartao-obra-32:hover img {
-  transform: scale(2.58);
+  transform: scale(1.04);
 }
 
 .cartao-obra-40 img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
+}
+
+.cartao-obra-43 img {
+  transform: scale(1.08);
+}
+
+.cartao-obra-43:hover img {
+  transform: scale(1.12);
 }
 
 .cartao-obra-44 img {

@@ -17,7 +17,7 @@ const dadosObras = {
   11: obra("Trip, 2024", "Trip, 2024", "Mesa e bancos de madeira\n25 × 50 × 70 cm", "Wooden table and benches\n25 × 50 × 70 cm"),
   12: obra("Das formas de mover o tempo, 2022", "Ways of Moving Time, 2022", "Vídeo, duração variável\nSérie em constante atualização", "Video, variable duration\nAn ongoing series"),
   13: obra("Bússola, 2022", "Compass, 2022", "Bordado em tecido apresentado sobre fundo de luz\n59 × 37 cm", "Embroidery on fabric presented over a light background\n59 × 37 cm"),
-  14: obra("Barquinho de papel", "Paper Boat"),
+  14: obra("Galocha azul", "Blue Rain Boot", "Audioinstalação\nÁudio 5´30”", "Audio installation\nAudio 5´30”"),
   15: obra("Punctum, 2026", "Punctum, 2026", "Caixas de papelão encapadas com tecido, costuradas e empilhadas\nDimensões variáveis", "Cardboard boxes covered with fabric, sewn and stacked\nVariable dimensions"),
   16: obra("Clockwise, 2024", "Clockwise, 2024", "Vídeo-instalação projetada em gavetas empilhadas\n1’56”", "Video installation projected onto stacked drawers\n1’56”"),
   17: obra("Travessia, 2021", "Crossing, 2021", "Atadura de gaze e cubo de vidro quebrado\n25 × 28 cm", "Gauze bandage and broken glass cube\n25 × 28 cm"),
@@ -31,21 +31,21 @@ const dadosObras = {
   25: obra("Metropolis, 2019", "Metropolis, 2019", "Bordado em retalho de saia de linho\n22 × 35 cm", "Embroidery on a scrap from a linen skirt\n22 × 35 cm"),
   26: obra("Inventário, 2018", "Inventory, 2018", "Bordado em algodão\n39 × 51 cm", "Embroidery on cotton\n39 × 51 cm"),
   27: obra("Cartas inviáveis, 2020", "Unfeasible Letters, 2020", "Colagens em papel de algodão\n13 × 2", "Collages on cotton paper\n13 × 2"),
-  28: obra("??", "??"),
+  28: obra("Encontrar meu ponto de reverberação, 2024", "Finding My Point of Reverberation, 2024", "Grafite sobre papel\n29,7 × 42 cm", "Graphite on paper\n29.7 × 42 cm"),
   29: obra("Série Desvio, 2020", "Deviation Series, 2020", "Costura de linhas em papel de algodão\n11 × 16 cm cada\nPolíptico", "Threads sewn onto cotton paper\n11 × 16 cm each\nPolyptych"),
   30: obra("Irene, 2019", "Irene, 2019", "Bordado e aplicação de tecido sobre tecido tingido com casca de cebola\n0,63 × 0,42 m", "Embroidery and fabric appliqué on fabric dyed with onion skins\n0.63 × 0.42 m"),
   31: obra("Escrita-rio, 2022–atual", "River-Writing, 2022–present", "Série composta por escrita fluida feita com caneta nanquim sobre papel\n29,7 × 42 cm cada", "Series of fluid writing made with India ink pen on paper\n29.7 × 42 cm each"),
-  32: obra("Rever I, 2022", "Rever I, 2022", "Fronha de algodão\n25 × 28 cm", "Cotton pillowcase\n25 × 28 cm"),
+  32: obra("Rever I, 2022", "Rever I, 2022", "Fronha de algodão e pontos de costura\n25 × 28 cm", "Cotton pillowcase and stitching\n25 × 28 cm"),
   33: obra("Pedra lascada, pedra polida, 2022", "Chipped Stone, Polished Stone, 2022", "Pedras e tecido costurado\nDimensões variáveis, série contínua\nPublicação relacionada: http://climacom.mudancasclimaticas.net.br/pedra-lascada/", "Stones and sewn fabric\nVariable dimensions, ongoing series\nRelated publication: http://climacom.mudancasclimaticas.net.br/pedra-lascada/"),
   34: obra("Passagens do interior, 2021", "Inner Passages, 2021", "Bordado em algodão\n37 × 33 cm", "Embroidery on cotton\n37 × 33 cm"),
   35: obra("Sismógrafo", "Seismograph", "Caneta, papel, sensores de biossinais e bobina\nDimensões variáveis", "Pen, paper, biosignal sensors and coil\nVariable dimensions"),
-  36: obra("Azul", "Blue"),
+  36: obra("Azul, 2018", "Blue, 2018", "Bordado em linho\n37 × 41 cm", "Embroidery on linen\n37 × 41 cm"),
   37: obra("Garrafas ao mar, 2021–atual", "Messages in Bottles, 2021–present", "Ação que consiste em percorrer a cidade deixando pelo caminho garrafas de vidro transparente. Cada garrafa contém um pequeno bordado e um cartão, que convida quem encontrou o objeto a contatar a artista. O projeto começou no momento de isolamento social pandêmico e segue em curso.", "An action consisting of walking through the city and leaving transparent glass bottles along the way. Each bottle contains a small embroidery and a card inviting whoever finds the object to contact the artist. The project began during pandemic social isolation and remains ongoing."),
-  38: obra("Rede social", "Social Network"),
+  38: obra("Rede social, 2024", "Social Network, 2024", "Cordas de redes penduradas\nDimensões variáveis", "Hanging hammock ropes\nVariable dimensions"),
   39: obra("O rio e o tempo, 2020 (tríptico)", "The River and Time, 2020 (triptych)", "Bordado em algodão\n5 × 6 cm cada", "Embroidery on cotton\n5 × 6 cm each"),
   40: obra("Argonauta, 2020", "Argonaut, 2020", "Grafite sobre papel\n29,7 × 42 cm", "Graphite on paper\n29.7 × 42 cm"),
   41: obra("Infiltração, 2021", "Infiltration, 2021", "Inscrição de grafite em papéis vegetais sobrepostos\n31 × 16 cm", "Graphite inscription on overlapping plant-based papers\n31 × 16 cm"),
-  42: obra("Grounding, 2024", "Grounding, 2024", "Pedra, haste de cobre e gesso\n3 × 2 m", "Stone, copper rod and plaster\n3 × 2 m"),
+  42: obra("Grounding, 2024", "Grounding, 2024", "Pedra, haste de cobre e gesso\n3 m × 2 m", "Stone, copper rod and plaster\n3 m × 2 m"),
   43: obra("Caminhada", "Walk"),
   44: obra("Garatujas", "Scribbles"),
   45: obra("Sagradas escrituras, 2021", "Sacred Scriptures, 2021", "Bordado em atadura de gaze\n72 × 22 cm", "Embroidery on gauze bandage\n72 × 22 cm")
@@ -86,16 +86,20 @@ const galeriasObras = {
     "obra-08.webp",
     "ponto de vista.png"
   ],
+  23: [
+    "23 capa.png",
+    "Sagradas-escrituras-1-sem-fundo.png"
+  ],
   27: [
-    "cartas inviaveis 1.jpg",
-    "cartas inviaveis 2.jpg",
-    "cartas inviaveis 3.jpeg",
-    "cartas inviaveis 4.jpeg",
-    "cartas inviaveis 5.jpg",
-    "cartas inviaveis 6.jpg",
-    "cartas inviaveis 7.jpg",
-    "cartas inviaveis 9.jpeg",
-    "cartas inviaveis X.jpg"
+    "cartas-inviaveis-01-recorte.jpg",
+    "cartas-inviaveis-02-recorte.jpg",
+    "cartas-inviaveis-03-recorte.jpg",
+    "cartas-inviaveis-04-recorte.jpg",
+    "cartas-inviaveis-05-recorte.jpg",
+    "cartas-inviaveis-06-recorte.jpg",
+    "cartas-inviaveis-07-recorte.jpg",
+    "cartas-inviaveis-08-recorte.jpg",
+    "cartas-inviaveis-09-recorte.jpg"
   ],
   29: [
     "A_sem tit 5-crop.png",
@@ -139,11 +143,13 @@ const galeriasObras = {
   ]
 };
 const imagensGaleria = galeriasObras[numeroOriginal];
+const figura = document.querySelector("figure");
+
+figura.classList.add(`obra-${numeroOriginal}`);
 
 if (imagensGaleria) {
-  const figura = document.querySelector("figure");
   figura.classList.add("tem-galeria", `galeria-obra-${numeroOriginal}`);
-  imagem.remove();
+  document.querySelector(".moldura-imagem-obra").remove();
   figura.insertAdjacentHTML("afterbegin", `
     <div class="galeria-imagens-obra">
       ${imagensGaleria.map((arquivo, indice) => `
@@ -160,20 +166,28 @@ if (imagensGaleria) {
       ? "assets/trabalhos/23 capa.png"
       : numeroOriginal === 20
         ? "assets/trabalhos/disposicao na pagina interna.png"
+        : numeroOriginal === 13
+          ? "assets/trabalhos/obra-13-sem-fundo.png"
+        : numeroOriginal === 14
+          ? "assets/trabalhos/barquinho.jpeg"
+        : numeroOriginal === 17
+          ? "assets/trabalhos/obra-17-sem-fundo.png"
+        : numeroOriginal === 22
+          ? "assets/trabalhos/2022.08-acervo.telma-4.jpg"
         : numeroOriginal === 19
           ? "assets/trabalhos/obra-19-clara.png"
         : numeroOriginal === 26
           ? "assets/trabalhos/acervo-66.jpg"
           : numeroOriginal === 30
-            ? "assets/trabalhos/InventarioX.jpg"
+            ? "assets/trabalhos/InventarioX-recorte.jpg"
             : numeroOriginal === 34
-              ? "assets/trabalhos/obra_34.jpeg"
+              ? "assets/trabalhos/obra-34-sem-fundo.png"
               : numeroOriginal === 35
                 ? "assets/trabalhos/obra-44.webp"
               : numeroOriginal === 37
                 ? "assets/trabalhos/capa-garrafa.jpg"
                 : numeroOriginal === 38
-                  ? "assets/trabalhos/obra_38.jpeg"
+                  ? "assets/trabalhos/obra-38-recorte.jpg"
                   : numeroOriginal === 39
                     ? "assets/trabalhos/essa rede social.png"
                   : numeroOriginal === 41
@@ -185,6 +199,7 @@ if (imagensGaleria) {
                 : `assets/trabalhos/obra-${codigoOriginal}.webp`;
   imagem.alt = dados[idioma]?.titulo || tituloPadrao;
 }
+
 document.querySelector("#tituloObra").textContent = dados[idioma]?.titulo || tituloPadrao;
 
 const descricaoObra = document.querySelector("#descricaoObra");
@@ -210,9 +225,11 @@ function adicionarLinhaDescricao(tipo, conteudo, url = false) {
   const linha = document.createElement("span");
   linha.className = "linha-descricao-obra";
 
-  const rotulo = document.createElement("strong");
-  rotulo.textContent = `${rotulosDescricao[tipo]}: `;
-  linha.append(rotulo);
+  if (tipo !== "tecnica") {
+    const rotulo = document.createElement("strong");
+    rotulo.textContent = `${rotulosDescricao[tipo]}: `;
+    linha.append(rotulo);
+  }
 
   if (url) {
     const link = document.createElement("a");
@@ -241,12 +258,17 @@ linhasDescricao.forEach((linha, indice) => {
     return;
   }
 
-  if (/^\d+(?:[,.]\d+)?\s*×/i.test(linha)) {
+  if (/^\d+(?:[,.]\d+)?\s*(?:m|cm)?\s*×/i.test(linha)) {
     adicionarLinhaDescricao("dimensoes", linha);
     return;
   }
 
   if (/^\d+[^\d\s]/.test(linha)) {
+    adicionarLinhaDescricao("duracao", linha);
+    return;
+  }
+
+  if (/^(áudio|audio)\s+\d/i.test(linha)) {
     adicionarLinhaDescricao("duracao", linha);
     return;
   }
