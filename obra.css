@@ -70,6 +70,10 @@ figure.tem-galeria {
   object-fit: cover;
 }
 
+.galeria-obra-40 .galeria-imagens-obra {
+  flex-wrap: nowrap;
+}
+
 .galeria-obra-44 .galeria-imagens-obra img {
   height: 180px;
 }
@@ -87,6 +91,44 @@ figure img {
   aspect-ratio: auto;
   object-fit: contain;
   object-position: center;
+}
+
+figure.obra-14 {
+  width: min(100%, 280px);
+}
+
+.obra-14 .moldura-imagem-obra img {
+  width: 100%;
+  max-width: none;
+}
+
+figure.obra-9 {
+  width: min(100%, 440px);
+}
+
+.obra-9 .moldura-imagem-obra {
+  width: 100%;
+  aspect-ratio: 1400 / 422;
+  overflow: hidden;
+}
+
+.obra-9 .moldura-imagem-obra img {
+  width: 100%;
+  max-width: none;
+  transform: translateY(-1.7%);
+}
+
+/* Remove as margens brancas incorporadas à capa de "Metropolis". */
+.obra-25 .moldura-imagem-obra {
+  width: min(100%, 360px);
+  aspect-ratio: 902 / 535;
+  overflow: hidden;
+}
+
+.obra-25 .moldura-imagem-obra img {
+  width: 100%;
+  max-width: none;
+  transform: translateY(-25%);
 }
 
 /* Recorte solicitado somente para "Sem título (ainda), 2025". */
@@ -113,14 +155,14 @@ figcaption {
 
 h1 {
   margin: 0 0 16px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 p {
   margin: 0;
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   white-space: pre-line;
 }

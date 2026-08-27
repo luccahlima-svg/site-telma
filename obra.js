@@ -132,9 +132,9 @@ const galeriasObras = {
     "img-0982.jpg"
   ],
   40: [
-    "capa.png",
-    "segunda.png",
-    "terceira.png"
+    "capa.png?v=20260827-1",
+    "segunda.png?v=20260827-1",
+    "terceira.png?v=20260827-1"
   ],
   44: [
     "imagem 1.png",
@@ -171,7 +171,7 @@ if (imagensGaleria) {
         : numeroOriginal === 14
           ? "assets/trabalhos/barquinho.jpeg"
         : numeroOriginal === 17
-          ? "assets/trabalhos/obra-17-sem-fundo.png"
+          ? "assets/trabalhos/obra-17-sem-fundo.png?v=20260827-1"
         : numeroOriginal === 22
           ? "assets/trabalhos/2022.08-acervo.telma-4.jpg"
         : numeroOriginal === 19
