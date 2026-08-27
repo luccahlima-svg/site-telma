@@ -230,7 +230,7 @@ const publicacoes = [
 const aulas = [
   { ano: "2026", pt: "Cidade e clima", en: "City and climate", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
   { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative methods and research techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
-  { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban dynamics and public policies", detalhePt: "", detalheEn: "" }
+  { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban dynamics and public policies", detalhePt: "IDP-SP", detalheEn: "IDP-SP" }
 ];
 
 const pesquisas = [
@@ -298,7 +298,7 @@ function criarCartaoObra(obra, indice) {
     `
     : "";
   return `
-    <a href="obra.html?id=${indice + 1}&lang=${idiomaAtual}" class="cartao-obra cartao-obra-${indice + 1}" aria-label="Abrir obra ${indice + 1}">
+    <a href="obra.html?id=${indice + 1}&lang=${idiomaAtual}" class="cartao-obra cartao-obra-${indice + 1}" aria-label="Abrir obra ${indice + 1}" target="_blank" rel="noopener noreferrer">
       <img src="assets/${obra.imagem}" alt="${titulo || `Obra ${String(indice + 1).padStart(2, "0")}`}" loading="lazy" />
       ${legenda}
     </a>

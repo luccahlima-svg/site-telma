@@ -46,7 +46,7 @@ const dadosObras = {
   40: obra("Argonauta, 2020", "Argonaut, 2020", "Grafite sobre papel\n29,7 × 42 cm", "Graphite on paper\n29.7 × 42 cm"),
   41: obra("Infiltração, 2021", "Infiltration, 2021", "Inscrição de grafite em papéis vegetais sobrepostos\n31 × 16 cm", "Graphite inscription on overlapping plant-based papers\n31 × 16 cm"),
   42: obra("Grounding, 2024", "Grounding, 2024", "Pedra, haste de cobre e gesso\n3 m × 2 m", "Stone, copper rod and plaster\n3 m × 2 m"),
-  43: obra("Caminhada", "Walk"),
+  43: obra("Caminhada", "Walk", "Nanquim em papel - 21 × 29,7 cm cada (tríptico)", "India ink on paper - 21 × 29.7 cm each (triptych)"),
   44: obra("Garatujas", "Scribbles"),
   45: obra("Sagradas escrituras, 2021", "Sacred Scriptures, 2021", "Bordado em atadura de gaze\n72 × 22 cm", "Embroidery on gauze bandage\n72 × 22 cm")
 };
@@ -167,7 +167,7 @@ if (imagensGaleria) {
       : numeroOriginal === 20
         ? "assets/trabalhos/disposicao na pagina interna.png"
         : numeroOriginal === 13
-          ? "assets/trabalhos/obra-13-sem-fundo.png"
+          ? "assets/trabalhos/obra-13-sem-fundo.png?v=20260827-1"
         : numeroOriginal === 14
           ? "assets/trabalhos/barquinho.jpeg"
         : numeroOriginal === 17

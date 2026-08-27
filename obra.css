@@ -1,6 +1,6 @@
 :root {
   font-family: Arial, Helvetica, sans-serif;
-  color: #181818;
+  color: #000;
   background: #fff;
 }
 
@@ -43,7 +43,7 @@ figure.tem-galeria {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
 }
 
@@ -64,6 +64,12 @@ figure.tem-galeria {
   height: 180px;
 }
 
+.galeria-obra-32 .galeria-imagens-obra img {
+  width: 156px;
+  height: 220px;
+  object-fit: cover;
+}
+
 .galeria-obra-44 .galeria-imagens-obra img {
   height: 180px;
 }
@@ -78,7 +84,7 @@ figure img {
   height: auto;
   max-width: 360px;
   max-height: none;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
   object-fit: contain;
   object-position: center;
 }
@@ -100,22 +106,22 @@ figure img {
 }
 
 figcaption {
-  width: min(100%, 640px);
-  max-width: 640px;
-  margin: 24px auto 0;
+  width: 100%;
+  max-width: none;
+  margin: 40px 0 0;
 }
 
 h1 {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   font-size: 16px;
   font-weight: 500;
 }
 
 p {
   margin: 0;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
   white-space: pre-line;
 }
 
@@ -135,7 +141,7 @@ p a {
 }
 
 .linha-descricao-obra strong {
-  color: #181818;
+  color: #000;
   font-weight: 500;
 }
 
@@ -174,6 +180,11 @@ p a {
 
   .galeria-obra-29 .galeria-imagens-obra img {
     height: auto;
+  }
+
+  .galeria-obra-32 .galeria-imagens-obra img {
+    width: min(100%, 156px);
+    height: 220px;
   }
 
   .galeria-obra-23 .galeria-imagens-obra img:nth-child(2) {
