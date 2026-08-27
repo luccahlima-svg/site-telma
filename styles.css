@@ -735,6 +735,14 @@ body.rota-inicial .extra-inicial {
   max-width: 960px;
 }
 
+#films.pagina-conteudo {
+  padding-top: 136px;
+}
+
+#films .conteudo-alinhado-menu {
+  padding-top: 0;
+}
+
 .cartao-filme {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -982,6 +990,10 @@ body.rota-inicial .extra-inicial {
   .pagina-conteudo,
   .obras-destaque {
     padding: 36px 24px 48px;
+  }
+
+  #films.pagina-conteudo {
+    padding-top: 36px;
   }
 
   .pagina-inicial {
