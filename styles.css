@@ -236,6 +236,21 @@ button {
   object-position: center;
 }
 
+/* Na capa, nome e carrossel formam a mesma linha visual. */
+@media (min-width: 1025px) {
+  body.rota-inicial .menu-lateral {
+    padding-top: var(--recuo-hero-topo);
+  }
+
+  body.rota-inicial .marca-menu-lateral {
+    margin-top: 0;
+  }
+
+  body.rota-inicial .imagem-hero {
+    width: min(60vw, 960px);
+  }
+}
+
 .rodape-hero {
   position: absolute;
   left: 40px;
