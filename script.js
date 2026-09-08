@@ -285,6 +285,13 @@ const botaoMenuMobile = document.querySelector(".botao-menu-mobile");
 const fundoMenuLateral = document.querySelector(".fundo-menu-lateral");
 let imagemHeroAtual = 0;
 
+function carregarImagemHero(indice) {
+  const imagem = imagensHero[indice]?.querySelector("img[data-src]");
+  if (!imagem) return;
+  imagem.src = imagem.dataset.src;
+  imagem.removeAttribute("data-src");
+}
+
 function criarCartaoObra(obra, indice) {
   const titulo = obra[idiomaAtual];
   const legenda = titulo || obra.ano
@@ -395,8 +402,10 @@ function avancarHero() {
   imagensHero[imagemHeroAtual].classList.remove("ativo");
   botoesHero[imagemHeroAtual]?.classList.remove("ativo");
   imagemHeroAtual = (imagemHeroAtual + 1) % imagensHero.length;
+  carregarImagemHero(imagemHeroAtual);
   imagensHero[imagemHeroAtual].classList.add("ativo");
   botoesHero[imagemHeroAtual]?.classList.add("ativo");
+  carregarImagemHero((imagemHeroAtual + 1) % imagensHero.length);
 }
 
 traduzirTextos();
@@ -413,4 +422,5 @@ fundoMenuLateral?.addEventListener("click", () => definirMenuLateralAberto(false
 document.querySelectorAll(".menu-lateral a").forEach((link) => {
   link.addEventListener("click", () => definirMenuLateralAberto(false));
 });
+carregarImagemHero(1);
 setInterval(avancarHero, 5200);

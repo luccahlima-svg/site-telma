@@ -232,7 +232,7 @@ button {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -247,7 +247,7 @@ button {
   }
 
   body.rota-inicial .imagem-hero {
-    width: min(60vw, 960px);
+    width: min(54vw, 860px);
   }
 }
 
@@ -1016,7 +1016,7 @@ body.rota-inicial .extra-inicial {
   }
 
   .imagem-hero {
-    inset: 0;
+    inset: 20px;
     width: auto;
     transform: none;
   }
