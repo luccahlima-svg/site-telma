@@ -8,6 +8,9 @@
   --recuo-hero-topo: 132px;
   --recuo-hero-direita: 56px;
   --recuo-hero-baixo: 104px;
+  /* Altura do nome + espaço até o primeiro item do menu ("Sobre"). */
+  --altura-marca-menu: 1.1rem;
+  --espaco-marca-navegacao: 64px;
   font-family: Avenir, "Avenir Next", Inter, Arial, sans-serif;
   color: var(--cor-texto-principal);
   background: var(--cor-fundo);
@@ -99,7 +102,7 @@ button {
 }
 
 .navegacao-menu-lateral {
-  margin-top: 64px;
+  margin-top: var(--espaco-marca-navegacao);
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -236,7 +239,7 @@ button {
   object-position: center;
 }
 
-/* Na capa, nome e carrossel formam a mesma linha visual. */
+/* Na capa, o topo do carrossel fica na mesma linha do primeiro item do menu. */
 @media (min-width: 1025px) {
   body.rota-inicial .menu-lateral {
     padding-top: var(--recuo-hero-topo);
@@ -248,6 +251,7 @@ button {
   }
 
   body.rota-inicial .imagem-hero {
+    top: calc(var(--recuo-hero-topo) + var(--altura-marca-menu) + var(--espaco-marca-navegacao));
     width: min(54vw, 860px);
   }
 

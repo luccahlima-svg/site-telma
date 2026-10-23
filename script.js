@@ -55,7 +55,7 @@ const textosPorIdioma = {
   en: {
     "rodape.direitos": "© 2026 Telma Hoyler.<br />All rights reserved.",
     "menu.sobre": "About",
-    "menu.arte": "Visual art",
+    "menu.arte": "Art",
     "menu.academico": "Academic",
     "menu.filmes": "Film",
     "menu.contato": "Contact",
@@ -63,23 +63,23 @@ const textosPorIdioma = {
     "submenu.trabalhos": "Works",
     "submenu.exposicoes": "Exhibitions",
     "submenu.textos": "Texts",
-    "submenu.publicacoes": "Selected publications",
-    "submenu.aulas": "Classes",
+    "submenu.publicacoes": "Selected Publications",
+    "submenu.aulas": "Teaching",
     "submenu.pesquisas": "Research",
     "inicio.legendaImagem": "Reference image",
     "inicio.obrasDestaque": "Selected works",
     "inicio.verTodasObras": "View all works →",
     "secao.sobre.numero": "About",
     "secao.sobre.titulo": "Between politics and poetics.",
-    "secao.sobre.texto1": "Telma Hoyler (São Paulo, 1988) is a visual artist and academic researcher. Holds a PhD in political science at the University of São Paulo (2017-2022) with exchange periods in Sciences Po (Paris, 2019-2020) and the University College London (Londres, 2023).",
-    "secao.sobre.texto2": "She researches human interactions considering their multiple possibilities: in time, in space, between humans and non-humans. In the field of political sociology, she studies the topic by focusing on representation and democracy. Since 2017, the artist seeks to translate into the visual universe reflections and sensations aroused throughout her extensive ethnographic research with bureaucrats, politicians and territorial mobilizers.",
+    "secao.sobre.texto1": "Telma Hoyler (São Paulo, 1988) is a visual artist and social scientist who completed her PhD in Political Science at the University of São Paulo in 2022. She moves between the city and the forest, between politics and poetics, between the worlds “inside” and “outside”. Rather than treating these as dualities or oppositions, she seeks to stitch together the points of contact between categories worn thin by the binary ways in which we persist in classifying the world.",
+    "secao.sobre.texto2": "Since 2018, she has sought to translate into visual forms the reflections and sensations arising from her extensive ethnographic research with bureaucrats, politicians and community leaders. Her practice draws on multiple media, including writing, sewing, collage, drawing, and the appropriation of images and sounds to create videos and sound installations.",
     "secao.sobre.exposicoes": "Exhibitions",
     "secao.textos": "Texts",
-    "secao.arte.numero": "Visual art",
+    "secao.arte.numero": "Art",
     "secao.arte.titulo": "Catalogue.",
     "secao.arte.introducao": "Visual catalogue in progress — temporary images until the final works are added.",
-    "academico.publicacoes": "Selected publications",
-    "academico.aulas": "Classes",
+    "academico.publicacoes": "Selected Publications",
+    "academico.aulas": "Teaching",
     "academico.pesquisas": "Research",
     "secao.contato.numero": "Contact",
     "secao.contato.titulo": "Let's talk.",
@@ -89,18 +89,18 @@ const textosPorIdioma = {
     "contato.instagram.academico": "Instagram — Academic",
     "contato.linkedin": "LinkedIn",
     "contato.lattes.titulo": "Lattes CV",
-    "contato.lattes.descricao": "CNPq academic CV platform.",
+    "contato.lattes.descricao": "CNPq’s academic CV platform.",
     "contato.atelier": "Studio",
     "contato.cidade": "São Paulo, Brazil",
     "filme.ficha.titulo": "Credits",
     "filme.ficha.direcao": "Director:",
-    "filme.ficha.montagem": "Editing:",
+    "filme.ficha.montagem": "Editor:",
     "filme.ficha.fotografia": "Director of Photography:",
-    "filme.ficha.cameras": "Camera:",
+    "filme.ficha.cameras": "Camera Operators:",
     "filme.ficha.som": "Sound Editing and Mixing:",
     "filme.ficha.cor": "Color Grading:",
     "filme.ficha.producao": "Production:",
-    "filme.ficha.posProducao": "Post-Production:",
+    "filme.ficha.posProducao": "Post-production:",
     "filme.ficha.financiamento": "Funding:"
   }
 };
@@ -115,7 +115,7 @@ const titulosObras = [
   ["Palimpsesto, 2023", "Palimpsest, 2023"],
   ["Ponto de vista, 2025", "Point of View, 2025"],
   ["Ponte para meu corpo, 2021", "Bridge to My Body, 2021"],
-  ["Sem título (ainda), 2025", "Untitled (Still), 2025"],
+  ["Sem título (ainda), 2025", "Untitled (Yet), 2025"],
   ["Trip, 2024", "Trip, 2024"],
   ["Das formas de mover o tempo, 2022", "Ways of Moving Time, 2022"],
   ["Bússola, 2022", "Compass, 2022"],
@@ -195,23 +195,23 @@ const obras = Array.from({ length: 45 }, (_, indice) => ({
 }));
 
 const exposicoes = [
-  { ano: "2025", pt: "Para entender a fúria", en: "Para entender a fúria", detalhePt: "Espaço Tingê, curadoria de Thatiana Cardoso — São Paulo", detalheEn: "Espaço Tingê, curated by Thatiana Cardoso — São Paulo" },
-  { ano: "2024", pt: "Marcas de ordens provisórias", en: "Marcas de ordens provisórias", detalhePt: "Edifício Vera, curadoria de André Fernandes e Renato Almeida — São Paulo", detalheEn: "Edifício Vera, curated by André Fernandes and Renato Almeida — São Paulo" },
-  { ano: "2024", pt: "Estruturas do vazio", en: "Estruturas do vazio", detalhePt: "E se coletivo, curadoria de Omar Porto — São Paulo", detalheEn: "E se coletivo, curated by Omar Porto — São Paulo" },
-  { ano: "2024", pt: "Linhas de Força, superfícies de contato", en: "Linhas de Força, superfícies de contato", detalhePt: "Galeria Gare, curadoria de Mário Gioia — São Paulo", detalheEn: "Galeria Gare, curated by Mário Gioia — São Paulo" },
-  { ano: "2024", pt: "Living Democracy", en: "Entanglements", detalhePt: "Brunei Gallery — Londres", detalheEn: "Brunei Gallery — London" },
-  { ano: "2023", pt: "A exceção e a regra", en: "A exceção e a regra", detalhePt: "Ateliê 397, curadoria de Erica Burini — São Paulo", detalheEn: "Ateliê 397 — São Paulo" },
-  { ano: "2023", pt: "E se ouvíssemos a casa?", en: "E se ouvíssemos a casa?", detalhePt: "Casa Mulungu — São Paulo", detalheEn: "Casa Mulungu — São Paulo" },
-  { ano: "2022", pt: "18º Salão Ubatuba de Artes Visuais", en: "18º Salão Ubatuba de Artes Visuais", detalhePt: "Ubatuba", detalheEn: "Ubatuba" },
-  { ano: "2022", pt: "Festival Lux de Performance", en: "Festival Lux de Performance", detalhePt: "Espaço Lux — São Paulo", detalheEn: "Espaço Lux — São Paulo" },
-  { ano: "2022", pt: "E se a gente ficar?", en: "E se a gente ficar?", detalhePt: "Apartamento 01 — São Paulo", detalheEn: "Apartamento 01 — São Paulo" },
-  { ano: "2018", pt: "Movimento (in)contido", en: "Movimento (in)contido", detalhePt: "Banca Curva — São Paulo", detalheEn: "Banca Curva — São Paulo" },
-  { ano: "2017", pt: "Marias", en: "Marias", detalhePt: "Galeria Butantã — São Paulo", detalheEn: "Galeria Butantã — São Paulo" }
+  { ano: "2025", pt: "Para entender a fúria", en: "To Understand the Fury", detalhePt: "Espaço Tingê, curadoria de Thatiana Cardoso — São Paulo", detalheEn: "Espaço Tingê, curated by Thatiana Cardoso — São Paulo, Brazil" },
+  { ano: "2024", pt: "Marcas de ordens provisórias", en: "Traces of Provisional Orders", detalhePt: "Edifício Vera, curadoria de André Fernandes e Renato Almeida — São Paulo", detalheEn: "Edifício Vera, curated by André Fernandes and Renato Almeida — São Paulo, Brazil" },
+  { ano: "2024", pt: "Estruturas do vazio", en: "Structures of Emptiness", detalhePt: "E se coletivo, curadoria de Omar Porto — São Paulo", detalheEn: "E se coletivo, curated by Omar Porto — São Paulo, Brazil" },
+  { ano: "2024", pt: "Linhas de Força, superfícies de contato", en: "Lines of Force, Surfaces of Contact", detalhePt: "Galeria Gare, curadoria de Mário Gioia — São Paulo", detalheEn: "Galeria Gare, curated by Mário Gioia — São Paulo, Brazil" },
+  { ano: "2024", pt: "Living Democracy", en: "Living Democracy", detalhePt: "Brunei Gallery — Londres", detalheEn: "Brunei Gallery — London, United Kingdom" },
+  { ano: "2023", pt: "A exceção e a regra", en: "The Exception and the Rule", detalhePt: "Ateliê 397, curadoria de Erica Burini — São Paulo", detalheEn: "Ateliê 397, curated by Erica Burini — São Paulo, Brazil" },
+  { ano: "2023", pt: "E se ouvíssemos a casa?", en: "What If We Listened to the House?", detalhePt: "Casa Mulungu — São Paulo", detalheEn: "Casa Mulungu — São Paulo, Brazil" },
+  { ano: "2022", pt: "18º Salão Ubatuba de Artes Visuais", en: "18th Ubatuba Visual Arts Salon", detalhePt: "Ubatuba", detalheEn: "Ubatuba, Brazil" },
+  { ano: "2022", pt: "Festival Lux de Performance", en: "Lux Performance Festival", detalhePt: "Espaço Lux — São Paulo", detalheEn: "Espaço Lux — São Paulo, Brazil" },
+  { ano: "2022", pt: "E se a gente ficar?", en: "What If We Stayed?", detalhePt: "Apartamento 01 — São Paulo", detalheEn: "Apartamento 01 — São Paulo, Brazil" },
+  { ano: "2018", pt: "Movimento (in)contido", en: "(Un)contained Movement", detalhePt: "Banca Curva — São Paulo", detalheEn: "Banca Curva — São Paulo, Brazil" },
+  { ano: "2017", pt: "Marias", en: "Marias", detalhePt: "Galeria Butantã — São Paulo", detalheEn: "Galeria Butantã — São Paulo, Brazil" }
 ];
 
 const textos = [
-  { ano: "2024", pt: "The rule and the exception", en: "The rule and the exception", detalhePt: "Catálogo", detalheEn: "Catalogue", url: "assets/textos/the-rule-and-the-exception-catalogue.pdf" },
-  { ano: "2024", pt: "Marcas de ordens provisórias", en: "Marcas de ordens provisórias", detalhePt: "", detalheEn: "", url: "assets/textos/marcas-de-ordens-provisorias.pdf" }
+  { ano: "2024", pt: "The rule and the exception", en: "The Rule and the Exception", detalhePt: "Catálogo", detalheEn: "Catalogue", url: "assets/textos/the-rule-and-the-exception-catalogue.pdf" },
+  { ano: "2024", pt: "Marcas de ordens provisórias", en: "Traces of Provisional Orders", detalhePt: "", detalheEn: "", url: "assets/textos/marcas-de-ordens-provisorias.pdf" }
 ];
 
 const publicacoes = [
@@ -228,9 +228,9 @@ const publicacoes = [
 ];
 
 const aulas = [
-  { ano: "2026", pt: "Cidade e clima", en: "City and climate", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
-  { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative methods and research techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
-  { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban dynamics and public policies", detalhePt: "IDP-SP", detalheEn: "IDP-SP" }
+  { ano: "2026", pt: "Cidade e clima", en: "Cities and Climate", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
+  { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative Methods and Research Techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
+  { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban Dynamics and Public Policy", detalhePt: "IDP-SP", detalheEn: "IDP-SP" }
 ];
 
 const pesquisas = [
@@ -239,6 +239,12 @@ const pesquisas = [
     paragrafos: [
       "Classicamente, esperamos que funcionários públicos não se relacionem com a política partidária; estariam nas burocracias e departamentos dos vários níveis de governo justamente para garantir estabilidade entre eleições, para que políticas permaneçam mesmo que o governante e o partido no poder mudem. A pesquisa procura entender, a partir da análise da base de dados de candidaturas do TSE – Tribunal Superior Eleitoral no Brasil, o fenômeno da candidatura dessas pessoas. Em termos qualitativos, enfoca na categoria dos policiais militares e professores de escolas públicas para entender como transformam o capital funcional aprendido como funcionários públicos em capital político para disputar eleições.",
       "Financiamento: Fapesp"
+    ],
+    tituloEn: "Public Servants Running for Office",
+    paragrafosEn: [
+      "Traditionally, public servants are expected to remain separate from party politics. Their role within bureaucracies and government departments at different levels is precisely to ensure continuity across electoral cycles, allowing public policies to endure even when elected officials and governing parties change.",
+      "Drawing on an analysis of electoral candidacy data from Brazil's Superior Electoral Court (TSE), this research seeks to understand the phenomenon of public servants running for elected office. Its qualitative component focuses on military police officers and public school teachers, examining how they convert the professional capital acquired through public service into political capital to compete in elections.",
+      "Funding: São Paulo Research Foundation (FAPESP)"
     ]
   },
   {
@@ -246,18 +252,35 @@ const pesquisas = [
     paragrafos: [
       "Do ponto de vista relacional, sempre existe alguém entre dois mundos: que conecta famílias, amigos, empresas etc. Essa pesquisa olha especificamente para os intermediários da política que atuam no nível dos bairros, conectando cidadãos ainda pouco inseridos nas redes políticas a instâncias públicas da política mais institucionalizada, como mandatos parlamentares, burocracias etc.",
       "Iniciou-se no final de 2016 como uma pesquisa etnográfica baseada na cidade de São Paulo para fins de doutoramento, tendo-se estendido por diversos caminhos subsequentes, incluindo a Rede People and Parliaments (2023-2025), a colaboração com o Nepol – Núcleo de Estudos em Poder Local (UFJF), entre outras parcerias e projetos em curso."
+    ],
+    tituloEn: "Political Brokers",
+    paragrafosEn: [
+      "From a relational perspective, there is always someone between two worlds: someone who connects families, friends, businesses, and other social networks. This research focuses specifically on political brokers operating at the neighborhood level, connecting citizens who are not yet deeply embedded in political networks to more institutionalized spheres of politics, such as elected representatives' offices, government bureaucracies, and other public institutions.",
+      "The project began in late 2016 as an ethnographic study based in São Paulo, initially conducted as doctoral research. It has since developed in several directions, including the People and Parliaments Network (2023–2025), collaboration with NEPOL — the Centre for Studies on Local Power at the Federal University of Juiz de Fora (UFJF) — and other ongoing partnerships and projects."
     ]
   },
   {
     titulo: "Pensar o pensamento: etnografia da política e outras reflexões epistêmicas e metodológicas",
     paragrafos: [
       "Toda pesquisa carrega uma pergunta escondida atrás da pergunta: não só o que descobrimos, mas como chegamos a poder dizer isso. Anos de campo ao lado de vereadores e seus intermediários me ensinaram que conhecer a política de perto muda o que se pode ver — e também o que se corre o risco de deixar de ver. Esta é a reflexão sobre o próprio ofício: os dilemas de estar perto demais e longe o suficiente, as traduções entre o que se observa e o que se escreve. Uma etnografia da própria etnografia, por assim dizer — pensar o pensamento como parte do trabalho, não como seu apêndice."
+    ],
+    tituloEn: "Thinking About Thinking: Political Ethnography and Other Epistemological and Methodological Reflections",
+    paragrafosEn: [
+      "Every research project carries a question hidden behind its question: not only what we discover, but how we come to be able to say what we say.",
+      "Years of fieldwork alongside city councillors and their political brokers have taught me that knowing politics from up close changes what becomes visible — and also what we risk failing to see. This is a reflection on the craft of research itself: the dilemmas of being too close while remaining sufficiently distant, and the translations between what is observed and what is written.",
+      "An ethnography of ethnography itself, so to speak — thinking about thinking as an integral part of the work, rather than an appendix to it."
     ]
   },
   {
     titulo: "Cidade e clima",
     paragrafos: [
       "A cidade sempre foi pensada como espaço de conflito e negociação, mas pensar a cidade contemporânea exige acrescentar outra camada: a cidade como corpo que sente o clima, que alaga, esquenta, seca. Este interesse cruza a tradição dos estudos urbanos com os debates recentes sobre adaptação e resiliência, perguntando como o clima se torna também questão de poder local: quem decide por onde a água escoa, quem tem sombra e quem tem sol, quem tem para onde ir quando chove demais. Caminhar pela cidade — atenta a córregos cobertos, rachaduras, árvores que faltam — é também um método: registrar no corpo, e às vezes na câmera, o que os indicadores ainda não sabem nomear."
+    ],
+    tituloEn: "Cities and Climate",
+    paragrafosEn: [
+      "The city has always been understood as a space of conflict and negotiation. But thinking about the contemporary city requires adding another layer: the city as a body that feels the climate, that floods, heats up, and dries out.",
+      "This interest brings the tradition of urban studies into conversation with recent debates on adaptation and resilience, asking how climate also becomes a matter of local power: who decides where water flows, who has shade and who is left in the sun, who has somewhere to go when the rain becomes too heavy.",
+      "Walking through the city — attentive to buried streams, cracks, and missing trees — is also a method: registering through the body, and sometimes through the camera, what indicators have not yet learned to name."
     ]
   },
   {
@@ -265,12 +288,27 @@ const pesquisas = [
     paragrafos: [
       "Documentos e objetos também fazem política, isto é, não apenas a representam, mas carregam decisões, omissões e rastros de poder que sobrevivem ao expediente que os produziu. Explorei anteriormente esse assunto nas publicações “A vida política dos documentos” (2019) e Itinerários da produção legislativa (2023). Daí duas coleções nascidas dessa mesma curiosidade: santinhos de campanha reunidos desde os anos 1950, quando se materializavam em caixas de fósforo; e boletim físico impresso pelas urnas eletrônicas. Ambas coleções já se tornaram matéria-prima de obras expostas.",
       "Um projeto sonhado nessa linha de interesses é criar mobiliário urbano fabricado a partir do descarte de documentos públicos e posicionar esse mobiliário para que pessoas descansem em praças públicas pela cidade."
+    ],
+    tituloEn: "Political Artefacts",
+    paragrafosEn: [
+      "Documents and objects also do politics. That is, they do not merely represent politics; they carry decisions, omissions, and traces of power that outlive the administrative processes that produced them.",
+      "I previously explored this subject in the publications <em>The Political Life of Documents</em> (2019) and <em>Itineraries of Legislative Production</em> (2023).",
+      "Two collections emerged from this same curiosity: electoral campaign cards dating back to the 1950s, when they sometimes took the form of matchboxes; and the physical paper records printed by electronic voting machines. Both collections have already become raw material for exhibited artworks.",
+      "One project I envision within this line of inquiry is to create urban furniture made from discarded public documents and place it in public squares across the city, offering people somewhere to rest."
     ]
   },
   {
     titulo: "Ressentimentos e outras questões de família / Home in Politics",
     paragrafos: [
       "“Home is where we start from”, escreveu Winnicott — mas onde a casa vai depois? Esta pesquisa, em parceria comparativa entre Brasil e Reino Unido, parte da ideia de que a casa não fica confinada à esfera privada: ela viaja emocionalmente, simbólica e materialmente para dentro das instituições políticas, moldando como poder, cuidado e conflito são vividos e geridos ali dentro. Olhamos para parlamentos nacionais e câmaras municipais nos dois países perguntando como hierarquias familiares, divisões de trabalho por gênero, comensalidade e afeto doméstico são reencenados na vida institucional cotidiana. Entre os afetos que assim cruzam a fronteira do privado ao público está o ressentimento, sentimento tantas vezes lido apenas como combustível reacionário, mas que talvez carregue também uma dimensão mais geral que cruza espectros políticos referindo-se a quem sente que seu lugar na casa comum da sociedade não foi reconhecido. Interessa-nos, assim, entender como o ressentimento circula e se naturaliza nas instituições e constrói a política."
+    ],
+    tituloEn: "Resentment and Other Family Matters / Home in Politics",
+    paragrafosEn: [
+      "“Home is where we start from,” wrote Winnicott — but where does home go from there?",
+      "This comparative research project, developed through a partnership between Brazil and the United Kingdom, begins with the idea that home is not confined to the private sphere. It travels emotionally, symbolically, and materially into political institutions, shaping how power, care, and conflict are experienced and managed within them.",
+      "We examine national parliaments and municipal councils in both countries, asking how family hierarchies, gendered divisions of labour, commensality, and domestic affection are reenacted in everyday institutional life.",
+      "Among the emotions that cross this boundary between private and public life is resentment — a feeling so often understood solely as fuel for reactionary politics, but one that may also carry a broader dimension, cutting across political divides and speaking to those who feel that their place in society's shared home has gone unrecognized.",
+      "We are therefore interested in understanding how resentment circulates, becomes normalized within institutions, and shapes political life."
     ]
   }
 ];
@@ -327,11 +365,13 @@ function criarItemLista(item) {
 }
 
 function criarItemPesquisa(pesquisa) {
+  const titulo = idiomaAtual === "en" ? pesquisa.tituloEn : pesquisa.titulo;
+  const paragrafos = idiomaAtual === "en" ? pesquisa.paragrafosEn : pesquisa.paragrafos;
   return `
     <article class="item-pesquisa">
-      <h2>${pesquisa.titulo}</h2>
+      <h2>${titulo}</h2>
       <div class="texto-pesquisa">
-        ${pesquisa.paragrafos.map((paragrafo) => `<p>${paragrafo}</p>`).join("")}
+        ${paragrafos.map((paragrafo) => `<p>${paragrafo}</p>`).join("")}
       </div>
     </article>
   `;

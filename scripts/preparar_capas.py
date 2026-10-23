@@ -1,60 +1,29 @@
 from pathlib import Path
-from PIL import Image, ImageChops, ImageFilter, ImageOps
+from PIL import Image, ImageOps
 
 
 ORIGEM = Path("assets/capa")
 DESTINO = ORIGEM / "carrossel"
-TAMANHO = (1920, 1080)
+# As fotos enviadas pela cliente já vêm em 3:2; manter a proporção deixa
+# todas as imagens do carrossel com o mesmo tamanho na capa.
+TAMANHO = (1800, 1200)
 
 
-def limite_fundo_preto(imagem: Image.Image):
-    cinza = imagem.convert("L")
-    mascara = cinza.point(lambda valor: 255 if valor > 42 else 0)
-    return mascara.getbbox()
-
-
-def limite_fundo_claro(imagem: Image.Image):
-    pontos = (
-        imagem.getpixel((0, 0)),
-        imagem.getpixel((imagem.width - 1, 0)),
-        imagem.getpixel((0, imagem.height - 1)),
-        imagem.getpixel((imagem.width - 1, imagem.height - 1)),
-    )
-    fundo = tuple(sum(p[i] for p in pontos) // 4 for i in range(3))
-    referencia = Image.new("RGB", imagem.size, fundo)
-    diferenca = ImageChops.difference(imagem, referencia).convert("L")
-    diferenca = diferenca.filter(ImageFilter.GaussianBlur(radius=5))
-    mascara = diferenca.point(lambda valor: 255 if valor > 18 else 0)
-    return mascara.getbbox()
+def numero_da_capa(arquivo: Path):
+    # Os arquivos chegam como "1(1).png", "6.png", "10.jpeg"...
+    return int(arquivo.stem.split("(")[0])
 
 
 def preparar(arquivo: Path):
-    imagem = Image.open(arquivo).convert("RGB")
-
-    if arquivo.stem in {"imagem 1", "imagem 2", "imagem 4"}:
-        limite = limite_fundo_preto(imagem)
-        if limite:
-            imagem = imagem.crop(limite)
-            # As bordas artesanais do papel deixam pequenos vãos pelos quais o
-            # fundo preto ainda aparece. Um recuo lateral curto elimina esses
-            # resíduos sem atingir o bordado central.
-            recuo_x = max(1, round(imagem.width * 0.025))
-            imagem = imagem.crop((recuo_x, 0, imagem.width - recuo_x, imagem.height))
-    elif arquivo.name == "caixas.jpg":
-        limite = limite_fundo_claro(imagem)
-        if limite:
-            imagem = imagem.crop(limite)
-    elif arquivo.name.startswith("ChatGPT Image"):
-        imagem = imagem.crop((24, 24, imagem.width - 24, imagem.height - 24))
-
+    imagem = ImageOps.exif_transpose(Image.open(arquivo)).convert("RGB")
     enquadrada = ImageOps.fit(
         imagem,
         TAMANHO,
         method=Image.Resampling.LANCZOS,
         centering=(0.5, 0.5),
     )
-    destino = DESTINO / f"{arquivo.stem}.webp"
-    enquadrada.save(destino, "WEBP", quality=92, method=6)
+    destino = DESTINO / f"{numero_da_capa(arquivo)}.webp"
+    enquadrada.save(destino, "WEBP", quality=90, method=6)
     return destino
 
 
