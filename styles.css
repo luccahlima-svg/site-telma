@@ -1,11 +1,11 @@
 :root {
-  --cor-fundo: #f4f3ef;
+  --cor-fundo: #fff;
   --cor-texto-principal: #111;
   --cor-texto-suave: #77736b;
   --cor-linha-fina: rgba(17, 17, 17, 0.14);
   --cor-painel: rgba(17, 17, 17, 0.035);
   --largura-menu-lateral: 240px;
-  --recuo-hero-topo: 132px;
+  --recuo-hero-topo: 72px;
   --recuo-hero-direita: 56px;
   --recuo-hero-baixo: 104px;
   /* Altura do nome + espaço até o primeiro item do menu ("Sobre"). */
@@ -250,9 +250,12 @@ button {
     margin-top: 0;
   }
 
+  /* O carrossel é centralizado na tela inteira, não só na área à direita do
+     menu; a largura máxima evita que ele invada o menu em telas menores. */
   body.rota-inicial .imagem-hero {
     top: calc(var(--recuo-hero-topo) + var(--altura-marca-menu) + var(--espaco-marca-navegacao));
-    width: min(54vw, 860px);
+    left: calc(50vw - var(--largura-menu-lateral));
+    width: min(54vw, 860px, calc(100vw - 2 * var(--largura-menu-lateral) - 48px));
   }
 
   body.rota-inicial .imagem-hero img {
