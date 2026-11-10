@@ -837,6 +837,19 @@ body.rota-inicial .extra-inicial {
   font-weight: 400;
 }
 
+.link-filme {
+  margin: 18px 0 0;
+  color: var(--cor-texto-suave);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.link-filme a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .pagina-contato {
   min-height: auto;
   flex-direction: column;

@@ -50,7 +50,8 @@ const textosPorIdioma = {
     "filme.ficha.cor": "Colorização:",
     "filme.ficha.producao": "Produção:",
     "filme.ficha.posProducao": "Pós-Produção:",
-    "filme.ficha.financiamento": "Financiamento:"
+    "filme.ficha.financiamento": "Financiamento:",
+    "filme.assista": "Assista aqui:"
   },
   en: {
     "rodape.direitos": "© 2026 Telma Hoyler.<br />All rights reserved.",
@@ -101,7 +102,8 @@ const textosPorIdioma = {
     "filme.ficha.cor": "Color Grading:",
     "filme.ficha.producao": "Production:",
     "filme.ficha.posProducao": "Post-production:",
-    "filme.ficha.financiamento": "Funding:"
+    "filme.ficha.financiamento": "Funding:",
+    "filme.assista": "Watch here:"
   }
 };
 
@@ -228,8 +230,8 @@ const publicacoes = [
 ];
 
 const aulas = [
-  { ano: "2026", pt: "Cidade e clima", en: "Cities and Climate", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
-  { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative Methods and Research Techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP" },
+  { ano: "2026", pt: "Cidade e clima", en: "Cities and Climate", detalhePt: "IDP-SP", detalheEn: "IDP-SP", url: "assets/academico/programa-cidades-e-clima-2026.pdf" },
+  { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative Methods and Research Techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP", url: "assets/academico/aula-1-metodos-qualitativos-2026.pptx" },
   { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban Dynamics and Public Policy", detalhePt: "IDP-SP", detalheEn: "IDP-SP" }
 ];
 
