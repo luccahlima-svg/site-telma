@@ -231,7 +231,7 @@ const publicacoes = [
 
 const aulas = [
   { ano: "2026", pt: "Cidade e clima", en: "Cities and Climate", detalhePt: "IDP-SP", detalheEn: "IDP-SP", url: "assets/academico/programa-cidades-e-clima-2026.pdf" },
-  { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative Methods and Research Techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP", url: "assets/academico/aula-1-metodos-qualitativos-2026.pptx" },
+  { ano: "2026", pt: "Métodos qualitativos e técnicas de pesquisa", en: "Qualitative Methods and Research Techniques", detalhePt: "IDP-SP", detalheEn: "IDP-SP", url: "assets/academico/programa-metodos-e-tecnicas-de-pesquisa-qualitativa-2026.pdf" },
   { ano: "2024", pt: "Dinâmicas urbanas e políticas públicas", en: "Urban Dynamics and Public Policy", detalhePt: "IDP-SP", detalheEn: "IDP-SP" }
 ];
 
